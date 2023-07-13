@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+          <title>carshop</title>
+          <link rel="stylesheet" href="index.css">
+          
+
+          
+    <!-- HEADER 1 STARTS -->
+            <div class="header">
+                <div class="header-left">
+                  <p class="logo-name">TARGET AUTOS</p>
+                  <img class="logo-img" src="./cars-logo/car logo2.jpeg">
+                </div>
+       
+                <div class="header-right">
+                  <img class="email" src="./cars-logo/email logo.jpeg">
+                  <p class="emailword">support@carshop.com</p>
+                  <img class="call" src="./cars-logo/call logo1.png">
+                  <p class="callword">+234-8060000000</p>
+                </div>
+            </div>
+
+            <!-- HEADER 1 ENDS -->
+
+            <!-- HEADER 2 STARTS -->
+
+            <div class="header2-container">
+              <div>
+                  <div class="dropdown">
+                    <button onclick="toggleSubMenu()">
+                      <img src="/cars-logo/menu icon 1.png" alt="Menu Icon" width="30" height="30">
+                    </button>
+                    <div id="subMenu" class="dropdown-content">
+                      <a href="toyota.html" onclick="selectSubMenu(1)">TOYOTA</a>
+                      <a href="lexus.html" onclick="selectSubMenu(2)">LEXUS</a>
+                      <a href="benz.html" onclick="selectSubMenu(3)">BENZ</a>
+                      <a href="#" onclick="selectSubMenu(4)">HONDA</a>
+                      <a href="#" onclick="selectSubMenu(5)">ACURA</a>
+                    </div>
+                  </diV>
+                  <a class="home" href="index.html">HOME</a>
+                  <a class="shop-cars" href="carsales.html">SHOP</a>
+                  <a class="about" href="about.html">ABOUT</a>
+                  <a class="contact" href="contact.html">CONTACT</a>
+                  <a class="terms" href="terms.html">TERMS</a>
+                </div>
+
+                <div class="search-container">
+                  <input type="text" id="searchInput" placeholder="Search...">
+                  <button class="searchbtn" onclick="search()">Search</button>
+                </div>
+
+                <div class="search-results">
+                  <ul>
+                    <!-- Search results will be dynamically added here -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <script src="search.js"></script>
+            <script src="dropdown-menu.js"></script>
+        </head>
+
+<!-- HEADER 2 ENDS -->
+
+
+        <body>
+          
+    <!-- SLIDER STARTS -->
+
+          <div id="slider" class="slider-container">
+            <div class="slide">
+              <img class="slider-image" src="/wallpapper/benz.jpg" alt="Slider Image 1">
+              <div class="slider-text">
+                <h2>
+                    TARGET AUTOS
+                </h2>
+                <p>Explore our vast selection of vehicles and find the car of your dreams.</p>
+                <p>We offer competitive pricing and financing options</p>
+                  <p>to make your car buying experience smooth and hassle-free</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slider-image" src="/wallpapper/lexus.jpg" alt="Slider Image 2">
+              <div class="slider-text">
+                <h2>
+                    New Cars & Used Cars
+                </h2>
+                <p>Find the perfect car that suits your needs and budget.</p> 
+                <p>We offer a wide range of new and pre-owned cars from top brands in the market. </p>
+                <p>Our pre-owned cars undergo thorough inspections to ensure top quality and performance.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img class="slider-image" src="/wallpapper/toyota.jpg" alt="Slider Image 3">
+              <div class="slider-text">
+                <h2>
+                    Featured Cars
+                </h2>
+                <p>Discover our featured cars and take advantage of our limited-time offers.</p> 
+                <P>From sleek sports cars to family-friendly SUVs, </P>
+                <p>we have a car for every lifestyle and preference.</p>
+              </div>
+            </div>
+          </div>
+          <div class="line-border1"></div>
+
+           <!-- SLIDER ENDS -->
+          
+      <!-- BROWSE BY MAKE STARTS -->
+      <section>
+        
+            <div class="make">Browse by make</div>
+            <div class="filter-tags">
+              <div class="car-make">
+              
+                <a href="benz.html"><img class="a" src="./cars-logo/benz1.jpeg"></a>
+                <a href="toyota.html"><img class="a" src="./cars-logo/toyota1.jpeg"></a>
+                <a href="lexus.html"><img class="a" src="./cars-logo/lexus1.jpeg"></a>
+                <a href="honda.html"><img class="a" src="./cars-logo/honda1.jpeg"></a>
+                <a href="bmw.html"><img class="a" src="./cars-logo/bmw1.jpeg"></a>
+                <a href="nissan.html"><img class="a" src="./cars-logo/nissan.jpeg"></a>
+                <a href="ford.html"><img class="a" src="./cars-logo/ford1.jpeg"></a>
+                <a href="jeep.html"><img class="a" src="./cars-logo/jeep1.png"></a>
+                <a href="land-rover.html"><img class="a" src="./cars-logo/land rover1.jpeg"></a>
+                <a href="hyundai.html"><img class="a" src="./cars-logo/hyundai1.jpeg"></a>
+              </div>
+            </div><br><hr><br>
+
+          <!-- BROWSE BY MAKE ENDS -->
+
+          <!-- SHOP STARTS -->
+
+          <div class="shop">Explore Our Car Collection</div>
+            <p class="shop-get">GET YOUR DREAM CAR AT A GREAT PRICE</p>
+
+
+            <!-- MODAL 1 -->
+
+              <div class="shop-container">
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/benz gle.png">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2018 Mercedes-Benz GLE350 4MATIC Sport</p>
+                  <p class="shop-text2">Mileage: 39,943 mi</p>
+                  <p class="shop-text3">$32,300</p>
+                  <button class="modalbtn" onclick="openModal('modal1')">Details</button>
+                </div>
+                <div class="modalx" id="modal1">
+                  <body>
+                  <div class="modal-contentx">
+                     
+                    <div class="header">
+                         <div class="header-left">
+                           <p class="logo-name">TARGET AUTOS</p>
+                           <img class="logo-img" src="./cars-logo/car logo2.jpeg">
+                         </div>
+                
+                         <div class="header-right">
+                           <img class="email" src="./cars-logo/email logo.jpeg">
+                           <p class="emailword">support@carshop.com</p>
+                           <img class="call" src="./cars-logo/call logo1.png">
+                           <p class="callword">+234-8060000000</p>
+                         </div>
+                    </div>
+                       <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
+                       <h3 class="details-header1">2016 Ford Explorer Limited Sport Utility 4D</h3>
+   
+   
+                      <div class="grid-container">
+                        <div class="parent-container">
+                           <div class="parent-image">
+                             <img id="parentImg" src="./cars/toyota truck.jpg" alt="Parent Image">
+                           </div>
+                     
+                           <div class="child-images">
+                             <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                             <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                             <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                             <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                             <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                             <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                           </div>
+                        </div>
+   
+   
+                        <div class="icon-grid">
+                           <div class="details-header1">$45,000.00</div>
+                           <div class="details-header2"><span class="icon"><img src="/imgpolicy/icon-phone.png" height="50" width="50"></span>
+                             call: 1234567890</div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/icon-mileage.png" height="50" width="50"></span>
+                             Mileage: 36,887mi
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/icon-structure.png" height="50" width="50"></span>
+                             Structure: 4 Doors
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/engine.png" height="50" width="50"></span>
+                             Engine: V6
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/transmission.png" height="50" width="50"></span>
+                             Transmission: Auto
+                           </div>
+                           
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/drivetrain.png" height="50" width="50"></span>
+                             Drivetrain: 4WD
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/key.png" height="50" width="50"></span>
+                             keyless start
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/camera.png" height="50" width="50"></span>
+                             Backup camera
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/navigation.png" height="50" width="50"></span>
+                             Navigation
+                           </div>
+                        </div>
+                      </div>
+                      <br>
+                      <button onclick="closeModal('modal2')">Close</button>
+                      <br>
+                      <footer class="footer">
+                         <div class="footer-social">
+                           <a href="#"><img src="/imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                           <a href="#"><img src="/imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                           <a href="#"><img src="/imgpolicy/icon-instagram.png" alt="Instagram"></a>
+                           <a href="#"><img src="/imgpolicy/icon-twitter.png" alt="Twitter"></a>
+                           <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                         </div>
+                      </footer>
+                    </div>
+                  </div>
+
+                 <!-- MODAL 2 -->
+
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/ford 2.png">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2018 Ford Explorer Limited Sport</p>
+                  <p class="shop-text2">Mileage: 39,943 mi</p>
+                  <p class="shop-text3">$32,300</p>
+                  <button class="modalbtn" onclick="openModal('modal2')">Details</button>
+                </div>
+                
+                <div class="modalx" id="modal2">
+                  <body>
+                  <div class="modal-contentx">
+                     
+                    <div class="header">
+                         <div class="header-left">
+                           <p class="logo-name">TARGET AUTOS</p>
+                           <img class="logo-img" src="./cars-logo/car logo2.jpeg">
+                         </div>
+                
+                         <div class="header-right">
+                           <img class="email" src="./cars-logo/email logo.jpeg">
+                           <p class="emailword">support@carshop.com</p>
+                           <img class="call" src="./cars-logo/call logo1.png">
+                           <p class="callword">+234-8060000000</p>
+                         </div>
+                    </div>
+                       <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
+                       <h3 class="details-header1">2016 Ford Explorer Limited Sport Utility 4D</h3>
+   
+   
+                      <div class="grid-container">
+                        <div class="parent-container">
+                           <div class="parent-image">
+                             <img id="parentImg" src="./cars/toyota truck.jpg" alt="Parent Image">
+                           </div>
+                     
+                           <div class="child-images">
+                             <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                             <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                             <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                             <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                             <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                             <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                           </div>
+                        </div>
+   
+   
+                        <div class="icon-grid">
+                           <div class="details-header1">$45,000.00</div>
+                           <div class="details-header2"><span class="icon"><img src="/imgpolicy/icon-phone.png" height="50" width="50"></span>
+                             call: 1234567890</div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/icon-mileage.png" height="50" width="50"></span>
+                             Mileage: 36,887mi
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/icon-structure.png" height="50" width="50"></span>
+                             Structure: 4 Doors
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/engine.png" height="50" width="50"></span>
+                             Engine: V6
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/transmission.png" height="50" width="50"></span>
+                             Transmission: Auto
+                           </div>
+                           
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/drivetrain.png" height="50" width="50"></span>
+                             Drivetrain: 4WD
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/key.png" height="50" width="50"></span>
+                             keyless start
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/camera.png" height="50" width="50"></span>
+                             Backup camera
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/navigation.png" height="50" width="50"></span>
+                             Navigation
+                           </div>
+                        </div>
+                      </div>
+                      <br>
+                      <button onclick="closeModal('modal2')">Close</button>
+                      <br>
+                      <footer class="footer">
+                         <div class="footer-social">
+                           <a href="#"><img src="/imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                           <a href="#"><img src="/imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                           <a href="#"><img src="/imgpolicy/icon-instagram.png" alt="Instagram"></a>
+                           <a href="#"><img src="/imgpolicy/icon-twitter.png" alt="Twitter"></a>
+                           <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                         </div>
+                      </footer>
+                    </div>
+                  </div>
+
+                
+                
+                <!-- MODAL 3 -->
+      
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/lexus rx350.png">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2019 Lexus RX350 Sport</p>
+                  <p class="shop-text2">Mileage: 41,754 mi</p>
+                  <p class="shop-text3">$49,500</p>
+                  <button class="modalbtn" class="modalbtn" onclick="openModal('modal3')">Details</button> 
+                </div>
+                
+                <div class="modalx" id="modal3">
+                 <body>
+                  <div class="modal-contentx">
+                  
+                    <div class="header">
+                      <div class="header-left">
+                        <p class="logo-name">TARGET AUTOS</p>
+                        <img class="logo-img" src="./cars-logo/car logo2.jpeg">
+                      </div>
+             
+                      <div class="header-right">
+                        <img class="email" src="./cars-logo/email logo.jpeg">
+                        <p class="emailword">support@carshop.com</p>
+                        <img class="call" src="./cars-logo/call logo1.png">
+                        <p class="callword">+234-8060000000</p>
+                      </div>
+                   </div>
+                    <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
+                    <h3 class="details-header1">2016 Ford Explorer Limited Sport Utility 4D</h3>
+
+
+                    <div class="grid-container">
+                      <div class="parent-container">
+                        <div class="parent-image">
+                          <img id="parentImg" src="./cars/toyota truck.jpg" alt="Parent Image">
+                        </div>
+                  
+                        <div class="child-images">
+                          <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                          <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                          <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                          <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                          <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                          <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                        </div>
+                      </div>
+
+
+                      <div class="icon-grid">
+                        <div class="details-header1">$45,000.00</div>
+                        <div class="details-header2"><span class="icon"><img src="/imgpolicy/icon-phone.png" height="50" width="50"></span>
+                          call: 1234567890</div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/icon-mileage.png" height="50" width="50"></span>
+                          Mileage: 36,887mi
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/icon-structure.png" height="50" width="50"></span>
+                          Structure: 4 Doors
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/engine.png" height="50" width="50"></span>
+                          Engine: V6
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/transmission.png" height="50" width="50"></span>
+                          Transmission: Auto
+                        </div>
+                        
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/drivetrain.png" height="50" width="50"></span>
+                          Drivetrain: 4WD
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/key.png" height="50" width="50"></span>
+                          keyless start
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/camera.png" height="50" width="50"></span>
+                          Backup camera
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/navigation.png" height="50" width="50"></span>
+                          Navigation
+                        </div>
+                      </div>
+                    </div>
+                    <br>
+                    <button onclick="closeModal('modal3')">Close</button>
+                    <br>
+                    <footer class="footer">
+                      <div class="footer-social">
+                        <a href="#"><img src="/imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                        <a href="#"><img src="/imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="/imgpolicy/icon-instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="/imgpolicy/icon-twitter.png" alt="Twitter"></a>
+                        <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+
+               <!-- MODAL 4 -->
+
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/toyota highlander.png">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2021 Toyota Highlander Limited Sport</p>
+                  <p class="shop-text2">Mileage: 19,739 mi</p>
+                  <p class="shop-text3">$56,200</p>
+                  <button class="modalbtn" onclick="openModal('modal4')">Details</button>
+                </div>
+                <div class="modalx" id="modal4">
+                  <body>
+                  <div class="modal-contentx">
+                     
+                    <div class="header">
+                         <div class="header-left">
+                           <p class="logo-name">TARGET AUTOS</p>
+                           <img class="logo-img" src="./cars-logo/car logo2.jpeg">
+                         </div>
+                
+                         <div class="header-right">
+                           <img class="email" src="./cars-logo/email logo.jpeg">
+                           <p class="emailword">support@carshop.com</p>
+                           <img class="call" src="./cars-logo/call logo1.png">
+                           <p class="callword">+234-8060000000</p>
+                         </div>
+                    </div><button onclick="closeModal('modal4')">Close</button>
+                       <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+                       <h3 class="details-header1">2016 Ford Explorer Limited Sport Utility 4D</h3>
+   
+   
+                      <div class="grid-container">
+                        <div class="parent-container">
+                           <div class="parent-image">
+                             <img id="parentImg" src="./cars/toyota truck.jpg" alt="Parent Image">
+                           </div>
+                     
+                           <div class="child-images">
+                             <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                             <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                             <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                             <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                             <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                             <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                           </div>
+                        </div>
+   
+   
+                        <div class="icon-grid">
+                           <div class="details-header1">$45,000.00</div>
+                           <div class="details-header2"><span class="icon"><img src="/imgpolicy/icon-phone.png" height="50" width="50"></span>
+                             call: 1234567890</div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/icon-mileage.png" height="50" width="50"></span>
+                             Mileage: 36,887mi
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/icon-structure.png" height="50" width="50"></span>
+                             Structure: 4 Doors
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/engine.png" height="50" width="50"></span>
+                             Engine: V6
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/transmission.png" height="50" width="50"></span>
+                             Transmission: Auto
+                           </div>
+                           
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/drivetrain.png" height="50" width="50"></span>
+                             Drivetrain: 4WD
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/key.png" height="50" width="50"></span>
+                             keyless start
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/camera.png" height="50" width="50"></span>
+                             Backup camera
+                           </div>
+                           <div class="item">
+                             <span class="icon"><img src="/imgpolicy/navigation.png" height="50" width="50"></span>
+                             Navigation
+                           </div>
+                        </div>
+                      </div><span class="modal-close" onclick="closeModal('modal4')">&times;</span>
+                      <br>
+                      <button onclick="closeModal('modal4')">Close</button>
+                      <br>
+                      <footer class="footer">
+                         <div class="footer-social">
+                           <a href="#"><img src="/imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                           <a href="#"><img src="/imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                           <a href="#"><img src="/imgpolicy/icon-instagram.png" alt="Instagram"></a>
+                           <a href="#"><img src="/imgpolicy/icon-twitter.png" alt="Twitter"></a>
+                           <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                         </div>
+                      </footer>
+                    </div>
+                  </div>
+
+                <!-- MODAL 5 -->
+
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/lexus.png">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2018 Lexus GX460 Sport</p>
+                  <p class="shop-text2">Mileage: 20,824 mi</p>
+                  <p class="shop-text3">$45,200</p>
+                  <button class="modalbtn" onclick="openModal('modal5')">Details</button>
+                </div>
+                <div id="modal5" class="modal">
+                  <div class="modal-content">
+                    <button onclick="closeModal('modal5')">Close</button>
+                    <h3 class="details-header1">2016 Ford Explorer Limited Sport Utility 4D</h3>
+
+
+                    <div class="grid-container">
+                      <div class="parent-container">
+                        <div class="parent-image">
+                          <img id="parentImg" src="./cars/toyota truck.jpg" alt="Parent Image">
+                        </div>
+                  
+                        <div class="child-images">
+                          <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                          <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                          <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                          <img src="./cars/toyota highlander.png" alt="Child Image 1" onclick="displayContent('./cars/toyota highlander.png')">
+                          <img src="./cars/lexus rx350.png" alt="Child Image 2" onclick="displayContent('./cars/lexus rx350.png')">
+                          <img src="./cars/ford 2.png" alt="Child Image 3" onclick="displayContent('../cars/ford 2.png')">
+                        </div>
+                      </div>
+
+
+                      <div class="icon-grid">
+                        <div class="details-header1">$45,000.00</div>
+                        <div class="details-header2"><span class="icon"><img src="/imgpolicy/icon-phone.png" height="50" width="50"></span>
+                          call: 1234567890</div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/icon-mileage.png" height="50" width="50"></span>
+                          Mileage: 36,887mi
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/icon-structure.png" height="50" width="50"></span>
+                          Structure: 4 Doors
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/engine.png" height="50" width="50"></span>
+                          Engine: V6
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/transmission.png" height="50" width="50"></span>
+                          Transmission: Auto
+                        </div>
+                        
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/drivetrain.png" height="50" width="50"></span>
+                          Drivetrain: 4WD
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/key.png" height="50" width="50"></span>
+                          keyless start
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/camera.png" height="50" width="50"></span>
+                          Backup camera
+                        </div>
+                        <div class="item">
+                          <span class="icon"><img src="/imgpolicy/navigation.png" height="50" width="50"></span>
+                          Navigation
+                        </div>
+                      </div>
+                    </div>
+
+                    <button onclick="closeModal('modal5')">Close</button>
+
+                    <h2>Related Posts</h2>
+
+                    <div class="related-posts">
+  
+                      <div class="related-post">
+                        <h3>Related Post 1</h3>
+                        <img src="./cars/benz.png" height="200" width="200">
+                        <p>BENZ</p>
+                      </div>
+
+                      <div class="related-post">
+                        <h3>Related Post 2</h3>
+                        <img src="./cars/sienna.png" height="200" width="200">
+                        <p>SIENNA</p>
+                      </div>
+
+                      <div class="related-post">
+                         <h3>Related Post 3</h3>
+                         <img src="./cars/le.png" height="200" width="200">
+                         <p>LEXUS</p>
+                      </div>
+
+                    
+                    </div>
+
+
+                    
+                    
+                    <p>This is the content of Modal 1.</p>
+                    <button onclick="closeModal('modal5')">Close</button>
+                  </div>
+                </div>
+
+               <!-- MODAL 6 -->
+
+                                  
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/benz.png">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2016 Mercedes-Benz C-Class C300</p>
+                  <p class="shop-text2">Mileage: 89,645 mi</p>
+                  <p class="shop-text3">$36,600</p>
+                  <button class="modalbtn" onclick="openModal('modal6')">Details</button>
+                </div>
+                <div id="modal6" class="modal">
+                  <div class="modal-content">
+                    <h3>Modal 1</h3>
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <p>This is the content of Modal 1.</p>
+                    <button onclick="closeModal('modal6')">Close</button>
+                  </div>
+                </div>
+
+                <!-- MODAL 7 -->
+                            
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/toyota truck.jpg">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2016 Toyota Tundra Double</p>
+                  <p class="shop-text2">Mileage: 86,400 mi</p>
+                  <p class="shop-text3">$33,300</p>
+                  <button class="modalbtn" onclick="openModal('modal7')">Details</button>
+                </div>
+                <div id="modal7" class="modal">
+                  <div class="modal-content">
+                    <div class="header">
+                      <div class="header-left">
+                        <p class="logo-name">TARGET AUTOS</p>
+                        <img class="logo-img" src="./cars-logo/car logo2.jpeg">
+                      </div>
+             
+                      <div class="header-right">
+                        <img class="email" src="./cars-logo/email logo.jpeg">
+                        <p class="emailword">support@carshop.com</p>
+                        <img class="call" src="./cars-logo/call logo1.png">
+                        <p class="callword">+234-8060000000</p>
+                      </div>
+                    </div> <button onclick="closeModal('modal7')">Close</button>
+                    <h3>Modal 1</h3>
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <img class="shop-img" src="./cars/toyota highlander.png" height="300" width="300">
+                    <p>This is the content of Modal 1.</p>
+                    <button onclick="closeModal('modal7')">Close</button>
+                 
+                    <h2>Related Posts</h2>
+
+                    <div class="related-posts">
+  
+                      <div class="related-post">
+                         <h3>Related Post 1</h3>
+                         <p>This is a related post 1.</p>
+                      </div>
+
+                      <div class="related-post">
+                        <h3>Related Post 2</h3>
+                        <p>This is a related post 2.</p>
+                      </div>
+
+                      <div class="related-post">
+                         <h3>Related Post 3</h3>
+                         <p>This is a related post 3.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+          
+                <!-- MODAL 8 -->
+
+                <div class="shop-group">
+                  <img class="shop-img" src="./cars/ranger rover.png">
+                  <span class="tag">NEW</span>
+                  <p class="shop-text1">2015 Land Rover Range Rover SE Sport</p>
+                  <p class="shop-text2">Mileage: 54,254 mi</p>
+                  <p class="shop-text3">$43,500</p>
+                  <button class="modalbtn" onclick="openModal('modal8')">Details</button>
+                </div>
+                <div id="modal8" class="modal">
+                  <div class="modal-content">
+                    <h3>Modal 1</h3>
+                    <div class="parent-image">
+                      <img id="parentImg" src="/cars/toyota highlander.png" alt="Parent Image">
+                      <div class="car-features-cont">
+                        <div class="car-features-brand">
+                          <p>RANGE ROVER 2018 MODEL </p>
+                          <p>$45,000.00</p>
+                          <p> Tel: 070000000000</p>
+                        </div>
+                    
+                            <br>
+                        <div class="car-features">
+                          <img src="/imgpolicy/icon-mileage.png" height="50px" width="50px">
+                          <scan>Mileage: 36,999mi</scan>
+                          <img src="/imgpolicy/engine.png" height="50px" width="50px">
+                          <scan>Engine: V6</scan>
+                          <img src="/imgpolicy/drivetrain.png" height="50px" width="50px">
+                          <scan>Drivetrain: 4WD</scan>
+                          <img src="/imgpolicy/transmission.png" height="50px" width="50px">
+                          <scan>Trasmission: Auto</scan>
+                          
+                        
+                          <img src="/imgpolicy/icon-structure.png" height="50px" width="50px">
+                          <scan>Structure: 4Doors</scan>
+                          <img src="/imgpolicy/engine.png" height="50px" width="50px">
+                          <scan>Engine: V6</scan>
+                          <img src="/imgpolicy/drivetrain.png" height="50px" width="50px">
+                          <scan>Drivetrain: 4WD</scan>
+                          <img src="/imgpolicy/transmission.png" height="50px" width="50px">
+                          <scan>Trasmission: Auto</scan>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="child-images">
+                      <img src="/cars/benz gle.png" alt="Child Image 1" onclick="displayImage('/cars/benz gle.png')">
+                      <img src="/cars/ford 2.png" alt="Child Image 2" onclick="displayImage('/cars/ford 2.png')">
+                      <img src="/cars/le.png" alt="Child Image 3" onclick="displayImage('/cars/le.png')">
+                    
+                    </div>
+                    <p>This is the content of Modal 1.</p>
+                    <button onclick="closeModal('modal8')">Close</button>
+                  </div>
+                </div>
+
+              </div>
+             <!-- MODAL END -->
+
+             
+        <!-- VIEW MORE START-->
+
+              <div class="view-cont">
+                <button class="viewbtn">
+                  <a class="view-link" href="carsales.html">View More</a></button>
+              </div>
+
+              <div class="line-border2"></div>
+
+      <!-- BROWSE STYLE START-->
+
+              <div class="style">Browse by style</div>
+            <div class="style-container">
+
+              <div class="style-group">
+                <a class="style-link" href="suv.html"><img class="b" src="./cars-logo/suv.png">
+                 <p class="style-text">SUV</p></a>
+              </div>
+                
+              <div class="style-group">
+                <a class="style-link" href="sedan.html"><img class="b" src="./cars-logo/sedan.png">
+                 <p class="style-text">SEDAN</p></a>
+              </div>
+    
+              <div class="style-group">
+                <a class="style-link" href="mini-van.html"><img class="b" src="./cars-logo/mini-van.png">
+                  <p class="style-text">MINI-VAN</p></a>
+              </div>
+
+              <div class="style-group">
+                <a class="style-link" href="truck.html"><img class="b" src="./cars-logo/truck.png">
+                 <p class="style-text">TRUCK</p></a>
+              </div>
+
+
+              <div class="style-image-cont">
+                <img class="style-image" src="/wallpapper/ad1.jpg">
+                
+                <div class="style-text-overlay">
+                  <h2>AFFORDABLE CARS AT</h2>
+                  <p>TARGET AUTOS</p>
+                </div>
+              </div><img class="style-image2" src="/wallpapper/ad11.jpg">
+             
+              
+            </div>
+          </div>
+
+        </section>
+              <!-- BROWSE STYLE END -->
+
+              <!-- WHY TARGET AUTOS START -->
+
+              <div class="why-cont">
+                <div class="why-head">
+                  <h>Why Choose TargetAuto Sales?</h>
+                </div>
+                <div class="why-img">
+                   <img src="./imgpolicy/7-Day Return Policy.gif" height="150" width="150">
+                   <p>7-Day Return Policy</p>
+                   <img src="./imgpolicy/Certified Pre-Owned.gif" height="150" width="150">
+                   <p>Certified Pre-Owned</p>
+                   <img src="./imgpolicy/Free Test Drives.gif" height="150" width="150">
+                   <p>Free Test Drives</p>
+                   <img src="./imgpolicy/Free Delivery.gif" height="150" width="150">
+                   <p>Free Delivery</p>
+                </div>
+              </div>
+
+              <!--WHY TARGET AUTOS END -->
+
+
+              <!-- FOOTER -->
+
+              <footer class="footer">
+                <div class="footer-left">
+                  <p><a href="#">HOME</a>
+                  <a href="#">ABOUT</a>
+                  <a href="#">CONTACT</a></p>
+                  <p><a href="#">TOYOTA</a>
+                  <a href="#">BENZ</a>
+                  <a href="#">LEXUS</a></p>
+                 
+                 <p><a href="#">HONDA</a>
+                  <a href="#">HYUNDAI</a>
+                  <a href="#">FORD</a></p>
+                  <p><a href="#">LANDROVER</a>
+                  <a href="#">ACURA</a>
+                  <a href="#">JEEP</a></p>
+                </div>
+                <div class="footer-right">
+                  <p>123 Main Street, City, Country</p>
+                  <p>Phone: (123) 456-7890</p>
+                  <p>Email: example@example.com</p>
+                </div>
+                <div class="footer-social">
+                  <a href="#"><img src="/imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                  <a href="#"><img src="/imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                  <a href="#"><img src="/imgpolicy/icon-instagram.png" alt="Instagram"></a>
+                  <a href="#"><img src="/imgpolicy/icon-twitter.png" alt="Twitter"></a>
+                  <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                </div>
+              
+              </footer>
+
+
+      <script src="category.js"></script>
+      <script src="slide-head.js"></script>
+      <script src="parent.js"></script>
+      <script src="modal.js"></script>
+
+
+    </body>
+</html>

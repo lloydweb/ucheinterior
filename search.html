@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Example</title>
+  <style>
+    .search-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .search-container input[type="text"] {
+      padding: 10px;
+      width: 300px;
+    }
+
+    .search-container button {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="openSearchResults()">Search</button>
+  </div>
+
+  <script>
+    function openSearchResults() {
+      var searchQuery = document.getElementById("searchInput").value;
+      var searchUrl = "search.html?q=" + encodeURIComponent(searchQuery);
+      window.open(searchUrl, "Search Results", "width=600,height=400");
+    }
+  </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .search-results {
+      margin-top: 20px;
+    }
+
+    .search-results ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .search-results li {
+      margin-bottom: 10px;
+    }
+
+    .search-results a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Search Results</h1>
+
+  <div class="search-results">
+    <ul>
+      <!-- Search results will be dynamically added here -->
+    </ul>
+  </div>
+
+  <script>
+    // Get the search query from the URL parameter
+    var searchQuery = new URLSearchParams(window.location.search).get("q");
+
+    // Perform the search and display the results
+    // Replace the code below with your own search logic
+
+    // Example search results
+    var searchResults = [
+      { title: "Page 1", url: "page1.html" },
+      { title: "Page 2", url: "page2.html" },
+      { title: "Page 3", url: "page3.html" },
+    ];
+
+    var searchResultsList = document.querySelector(".search-results ul");
+
+    if (searchResults.length === 0) {
+      var listItem = document.createElement("li");
+      listItem.textContent = "No results found.";
+      searchResultsList.appendChild(listItem);
+    } else {
+      searchResults.forEach(function(result) {
+        var listItem = document.createElement("li");
+        var link = document.createElement("a");
+        link.href = result.url;
+        link.textContent = result.title;
+        listItem.appendChild(link);
+        searchResultsList.appendChild(listItem);
+      });
+    }
+  </script>
+</body>
+</html>

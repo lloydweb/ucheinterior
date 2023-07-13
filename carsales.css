@@ -1,0 +1,98 @@
+/* Main page layout */
+.sales-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 20px;
+
+}
+
+.filter-column {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Filter section */
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  font-weight: bold;
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.filter-tag {
+  background-color: #ddd;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.filter-tag.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.filter-input {
+  margin-bottom: 10px;
+}
+
+/* Item list */
+.item-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.item-price {
+  color: green;
+  margin-bottom: 5px;
+}
+
+.item-tag{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+  
+
+}
+
+.item-modalbtn{
+  position: absolute;
+    bottom: 10px;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+    background-color: #f11f10;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+ 
+}
+
+.item-modalbtn:hover{
+  background-color: #f18e8a;
+}

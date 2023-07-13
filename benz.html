@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TargetAutos</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="carsales.css">
+    
+
+<!-- HEADER 1 STARTS -->
+      <div class="header">
+          <div class="header-left">
+            <p class="logo-name">TARGET AUTOS</p>
+            <img class="logo-img" src="./cars-logo/car logo2.jpeg">
+          </div>
+ 
+          <div class="header-right">
+            <img class="email" src="./cars-logo/email logo.jpeg">
+            <p class="emailword">support@carshop.com</p>
+            <img class="call" src="./cars-logo/call logo1.png">
+            <p class="callword">+234-8060000000</p>
+          </div>
+      </div>
+
+      <!-- HEADER 1 ENDS -->
+
+      <!-- HEADER 2 STARTS -->
+
+      <div class="header2-container">
+        <div>
+            <div class="dropdown">
+              <button onclick="toggleSubMenu()">
+                <img src="/cars-logo/menu icon 1.png" alt="Menu Icon" width="30" height="30">
+              </button>
+              <div id="subMenu" class="dropdown-content">
+                <a href="toyota.html" onclick="selectSubMenu(1)">TOYOTA</a>
+                <a href="lexus.html" onclick="selectSubMenu(2)">LEXUS</a>
+                <a href="benz.html" onclick="selectSubMenu(3)">BENZ</a>
+                <a href="#" onclick="selectSubMenu(4)">HONDA</a>
+                <a href="#" onclick="selectSubMenu(5)">ACURA</a>
+              </div>
+            </diV>
+            <a class="home" href="index.html">HOME</a>
+            <a class="shop-cars" href="carsales.html">SHOP</a>
+            <a class="about" href="about.html">ABOUT</a>
+            <a class="contact" href="contact.html">CONTACT</a>
+            <a class="terms" href="terms.html">TERMS</a>
+          </div>
+
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button class="searchbtn" onclick="search()">Search</button>
+          </div>
+
+          <div class="search-results">
+            <ul>
+              <!-- Search results will be dynamically added here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="search.js"></script>
+      <script src="dropdown-menu.js"></script>
+  </head>
+
+<!-- HEADER 2 ENDS -->
+
+</head>
+<body>
+    <!-- CATEGORY STARTS -->
+    
+  <div class="shop">Mercedes-Benz Car Collection</div><br>
+  <div class="sales-container">
+    <div class="filter-column">
+      <div class="filter-section">
+        <h2 class="filter-title">Filter by Model</h2>
+        <div class="filter-tags">
+          <span class="filter-tag" onclick="filterCategory('all')">ALL</span>
+          <span class="filter-tag" onclick="filterCategory('glk')">GLK</span>
+          <span class="filter-tag" onclick="filterCategory('c-class')">C-CLASS</span>
+          <span class="filter-tag" onclick="filterCategory('gle')">GLE</span>
+          <span class="filter-tag" onclick="filterCategory('ml')">ML</span>
+          
+       
+          <!-- Add more category tags as needed -->
+        </div>
+      </div>
+      <div class="filter-section">
+        <h2 class="filter-title">Filter by Price</h2>
+        <div class="filter-input">
+          <label for="priceMin">Min:</label>
+          <input type="number" id="priceMin" min="0">
+        </div>
+        <div class="filter-input">
+          <label for="priceMax">Max:</label>
+          <input type="number" id="priceMax" min="0">
+        </div>
+        <div class="filter-input">
+          <button onclick="applyFilters()">Apply</button>
+        </div>
+      </div>
+    </div>
+   
+       <!-- CATEGORY ENDS -->
+   
+       <!-- ITEMS STARTS-->
+
+    <div class="item-list" id="itemList">
+
+        <!-- ITEMS 1--> 
+
+      <div class="item-card c-class">
+        <img class="item-img" src="./cars/benz.png" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">BENZ C-CLASS</h3>
+        <p class="item-price">$32,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal1')">Details</button>
+      </div>
+
+      <!-- ITEMS 2--> 
+
+      <div class="item-card gle">
+        <img class="item-img" src="./cars/benz gle.png" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">BENZ GLE</h3>
+        <p class="item-price">$41,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal2')">Details</button>
+      </div>
+
+      <!-- ITEMS 3--> 
+
+   
+
+      
+
+      <!-- Add more item cards as needed -->
+    </div>
+  </div><br>
+  <footer class="footer">
+    <div class="footer-right">
+      <p>123 Main Street, City, Country</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: example@example.com</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="/imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+      <a href="#"><img src="/imgpolicy/icon-facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="/imgpolicy/icon-instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="/imgpolicy/icon-twitter.png" alt="Twitter"></a>
+      <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+    </div>
+
+  </footer>
+
+  <script src="category.js"></script>
+  <script src="modal.js"></script>
+  <script src="parent.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+ 
+
+        <!-- FILTER STARTS -->
+
+       
+  <!-- FILTER ENDS -->
+
+
+    
+        <!-- Add more item cards as needed -->
+     
+<!-- Your website content here -->
+   
+ 
