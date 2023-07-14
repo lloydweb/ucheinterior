@@ -126,8 +126,8 @@ font-weight: bold;
 }
 
 .dropdown-content a {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -323,6 +323,7 @@ justify-items: center;
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    color: rgb(2, 189, 2);
 
 }
 

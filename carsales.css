@@ -47,6 +47,13 @@
 
 .filter-input {
   margin-bottom: 10px;
+  
+}
+
+.filter-price {
+  width: 150px;
+  height: 30px; 
+  font-size: 20px; 
 }
 
 /* Item list */
@@ -59,11 +66,12 @@
 }
 
 .item-title {
+  font-size: 15px;
   font-weight: bold;
 }
 
 .item-price {
-  color: green;
+  color: rgb(2, 189, 2);
   margin-bottom: 5px;
   font-size: 20px;
 }
@@ -99,3 +107,6 @@
 .item-modalbtn:hover{
   background-color: #f18e8a;
 }
+
+
+
