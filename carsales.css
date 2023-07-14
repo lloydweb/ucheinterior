@@ -30,6 +30,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 5px;
+  
 }
 
 .filter-tag {
@@ -38,6 +39,9 @@
   margin-right: 5px;
   margin-bottom: 5px;
   cursor: pointer;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .filter-tag.active {
@@ -100,6 +104,7 @@
     background-color: #f11f10;
     color: #fff;
     font-size: 18px;
+    border: none;
     cursor: pointer;
  
 }

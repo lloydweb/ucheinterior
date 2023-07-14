@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <body>
+<body>
         <head>
           <title>carshop</title>
           <link rel="stylesheet" type="text/css" href="index.css">
@@ -8,23 +8,24 @@
 
           
     <!-- HEADER 1 STARTS -->
-        <div class="header">
-          <div class="left-section">
-            <a class="header-link" href="index.html">
-             <img src="./cars-logo/car logo3.jpeg" alt="Logo" class="name-logo">
-             <span class="name">TARGET AUTOS</span></a>
+    <header class="header">
+      <a class="header-link" href="index.html">
+          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
+      <div class="text-section">
+        <h2>TARGET AUTOS</h2>
+          </a>
+      </div>
+      <div class="contact-section">
+          <div class="contact-item">
+              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
+              <p class="phone-number">Phone: +1 123-456-7890</p>
           </div>
-          <div class="right-section">
-              <div class="contact-info">
-                <img src="./cars-logo/email logo.jpeg" alt="Email Logo" class="email-logo">
-                <span class="email">example@example.com</span>
-              </div>
-              <div class="contact-info">
-                <img src="./cars-logo/call logo1.png" alt="Phone Logo" class="call-logo">
-                <span class="phone">1234567890</span>
-              </div>
+          <div class="contact-item">
+              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
+              <p>Email: example@example.com</p>
           </div>
-        </div>
+      </div>
+    </header>
 
             <!-- HEADER 1 ENDS -->
 
@@ -161,32 +162,33 @@
                   <img class="shop-img" src="./cars/benz gle.png">
                   <span class="tag">NEW</span>
                   <p class="shop-text1">2018 Mercedes-Benz GLE350 4MATIC Sport</p>
-                  <p class="shop-text2">Mileage: 39,943 mi</p>
+                  <p class="shop-text2">Mileage: 43,583 mi</p>
                   <p class="shop-text3">$32,300</p>
                   <button class="modalbtn" onclick="openModal('modal1')">Details</button>
                 </div>
                 <div class="modal" id="modal1">
-                  <body>
+                <body>
                   <div class="modal-content">
                      
                     <!-- HEADER 1 STARTS -->
-        <div class="header">
-          <div class="left-section">
-            <a class="header-link" href="index.html">
-              <img src="./cars-logo/car logo3.jpeg" alt="Logo" class="name-logo">
-              <span class="name">TARGET AUTOS</span></a>
-          </div>
-          <div class="right-section">
-              <div class="contact-info">
-                <img src="./cars-logo/email logo.jpeg" alt="Email Logo" class="email-logo">
-                <span class="email">example@example.com</span>
-              </div>
-              <div class="contact-info">
-                <img src="./cars-logo/call logo1.png" alt="Phone Logo" class="call-logo">
-                <span class="phone">123-456-7890</span>
-              </div>
-          </div>
-        </div>
+                    <header class="header">
+                      <a class="header-link" href="index.html">
+                          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
+                      <div class="text-section">
+                        <h2>TARGET AUTOS</h2>
+                          </a>
+                      </div>
+                      <div class="contact-section">
+                          <div class="contact-item">
+                              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
+                              <p class="phone-number">Phone: +1 123-456-7890</p>
+                          </div>
+                          <div class="contact-item">
+                              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
+                              <p>Email: example@example.com</p>
+                          </div>
+                      </div>
+                    </header>
 
             <!-- HEADER 1 ENDS -->
                        <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
@@ -212,12 +214,12 @@
    
    
                         <div class="icon-grid">
-                           <div class="details-header1">$45,000.00</div>
+                           <div class="details-header1">$32,300.00</div>
                            <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
                              call: 1234567890</div>
                            <div class="item">
                              <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                             Mileage: 36,887mi
+                             Mileage: 43,583 mi
                            </div>
                            <div class="item">
                              <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
@@ -254,16 +256,27 @@
                       <button class="closebtn" onclick="closeModal('modal1')">Close</button>
                       <br>
                       <footer class="footer">
-                         <div class="footer-social">
-                           <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                           <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                           <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Instagram"></a>
-                           <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Twitter"></a>
-                           <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
-                         </div>
+                        <div class="footer-item left">
+                            <p>Address: 123 Main St, City, Country</p>
+                        </div>
+                        <div class="footer-item">
+                            <p class="femail">Email: example@example.com</p>
+                            <div class="social-media">
+                                <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                                <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                                <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
+                                <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
+                            </div>
+                            <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
+                        </div>
+                        <div class="footer-item right">
+                            <p>Contact: +1234567890</p>
+                        </div>
+        
                       </footer>
                     </div>
                   </div>
+                </body>
 
                  <!-- MODAL 2 -->
 
@@ -271,8 +284,8 @@
                   <img class="shop-img" src="./cars/ford 2.png">
                   <span class="tag">NEW</span>
                   <p class="shop-text1">2018 Ford Explorer Limited Sport</p>
-                  <p class="shop-text2">Mileage: 39,943 mi</p>
-                  <p class="shop-text3">$32,300</p>
+                  <p class="shop-text2">Mileage: 29,943 mi</p>
+                  <p class="shop-text3">$40,500</p>
                   <button class="modalbtn" onclick="openModal('modal2')">Details</button>
                 </div>
                 
@@ -281,24 +294,24 @@
                   <div class="modal-content">
                      
                     <!-- HEADER 1 STARTS -->
-        <div class="header">
-          <div class="left-section">
-             <img src="./cars-logo/car logo3.jpeg" alt="Logo" class="name-logo">
-             <span class="name">TARGET AUTOS</span>
-          </div>
-          <div class="right-section">
-              <div class="contact-info">
-                <a class="header-link" href="index.html">
-                  <img src="./cars-logo/car logo3.jpeg" alt="Logo" class="name-logo">
-                  <span class="name">TARGET AUTOS</span></a>
-              </div>
-              <div class="contact-info">
-                <img src="./cars-logo/call logo1.png" alt="Phone Logo" class="call-logo">
-                <span class="phone">123-456-7890</span>
-              </div>
-          </div>
-        </div>
-
+                    <header class="header">
+                      <a class="header-link" href="index.html">
+                          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
+                      <div class="text-section">
+                        <h2>TARGET AUTOS</h2>
+                          </a>
+                      </div>
+                      <div class="contact-section">
+                          <div class="contact-item">
+                              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
+                              <p class="phone-number">Phone: +1 123-456-7890</p>
+                          </div>
+                          <div class="contact-item">
+                              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
+                              <p>Email: example@example.com</p>
+                          </div>
+                      </div>
+                    </header>
             <!-- HEADER 1 ENDS -->
                        <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
                        <h3 class="details-header1">2016 Ford Explorer Limited Sport Utility 4D</h3>
@@ -321,12 +334,12 @@
    
    
                         <div class="icon-grid">
-                           <div class="details-header1">$45,000.00</div>
+                           <div class="details-header1">$40,500.00</div>
                            <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
                              call: 1234567890</div>
                            <div class="item">
                              <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                             Mileage: 36,887mi
+                             Mileage: 29,943 mi
                            </div>
                            <div class="item">
                              <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
@@ -363,13 +376,23 @@
                       <button class="closebtn" onclick="closeModal('modal2')">Close</button>
                       <br>
                       <footer class="footer">
-                         <div class="footer-social">
-                           <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                           <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                           <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Instagram"></a>
-                           <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Twitter"></a>
-                           <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
-                         </div>
+                        <div class="footer-item left">
+                            <p>Address: 123 Main St, City, Country</p>
+                        </div>
+                        <div class="footer-item">
+                            <p class="femail">Email: example@example.com</p>
+                            <div class="social-media">
+                                <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                                <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                                <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
+                                <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
+                            </div>
+                            <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
+                        </div>
+                        <div class="footer-item right">
+                            <p>Contact: +1234567890</p>
+                        </div>
+        
                       </footer>
                     </div>
                   </div>
@@ -392,23 +415,24 @@
                   <div class="modal-content">
                   
                     <!-- HEADER 1 STARTS -->
-        <div class="header">
-          <div class="left-section">
-            <a class="header-link" href="index.html">
-              <img src="./cars-logo/car logo3.jpeg" alt="Logo" class="name-logo">
-              <span class="name">TARGET AUTOS</span></a>
-          </div>
-          <div class="right-section">
-              <div class="contact-info">
-                <img src="./cars-logo/email logo.jpeg" alt="Email Logo" class="email-logo">
-                <span class="email">example@example.com</span>
-              </div>
-              <div class="contact-info">
-                <img src="./cars-logo/call logo1.png" alt="Phone Logo" class="call-logo">
-                <span class="phone">123-456-7890</span>
-              </div>
-          </div>
-        </div>
+                    <header class="header">
+                      <a class="header-link" href="index.html">
+                          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
+                      <div class="text-section">
+                        <h2>TARGET AUTOS</h2>
+                          </a>
+                      </div>
+                      <div class="contact-section">
+                          <div class="contact-item">
+                              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
+                              <p class="phone-number">Phone: +1 123-456-7890</p>
+                          </div>
+                          <div class="contact-item">
+                              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
+                              <p>Email: example@example.com</p>
+                          </div>
+                      </div>
+                    </header>
 
             <!-- HEADER 1 ENDS -->
                     <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
@@ -432,12 +456,12 @@
 
 
                       <div class="icon-grid">
-                        <div class="details-header1">$45,000.00</div>
+                        <div class="details-header1">$49,500.00</div>
                         <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
                           call: 1234567890</div>
                         <div class="item">
                           <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                          Mileage: 36,887mi
+                          Mileage: 41,754 mi
                         </div>
                         <div class="item">
                           <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
@@ -474,13 +498,23 @@
                     <button class="closebtn" onclick="closeModal('modal3')">Close</button>
                     <br>
                     <footer class="footer">
-                      <div class="footer-social">
-                        <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                        <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Twitter"></a>
-                        <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                      <div class="footer-item left">
+                          <p>Address: 123 Main St, City, Country</p>
                       </div>
+                      <div class="footer-item">
+                          <p class="femail">Email: example@example.com</p>
+                          <div class="social-media">
+                              <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                              <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                              <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
+                              <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
+                          </div>
+                          <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
+                      </div>
+                      <div class="footer-item right">
+                          <p>Contact: +1234567890</p>
+                      </div>
+      
                     </footer>
                   </div>
                 </div>
@@ -491,8 +525,8 @@
                 <img class="shop-img" src="./cars/toyota truck.jpg">
                 <span class="tag">NEW</span>
                 <p class="shop-text1">2016 Toyota Tundra Double</p>
-                <p class="shop-text2">Mileage: 41,754 mi</p>
-                <p class="shop-text3">$49,500</p>
+                <p class="shop-text2">Mileage: 54,754 mi</p>
+                <p class="shop-text3">$23,500</p>
                 <button class="modalbtn" class="modalbtn" onclick="openModal('modal4')">Details</button> 
               </div>
               
@@ -501,24 +535,24 @@
                 <div class="modal-content">
                 
                   <!-- HEADER 1 STARTS -->
-      <div class="header">
-        <div class="left-section">
-          <a class="header-link" href="index.html">
-            <img src="./cars-logo/car logo3.jpeg" alt="Logo" class="name-logo">
-            <span class="name">TARGET AUTOS</span></a>
-        </div>
-        <div class="right-section">
-            <div class="contact-info">
-              <img src="./cars-logo/email logo.jpeg" alt="Email Logo" class="email-logo">
-              <span class="email">example@example.com</span>
-            </div>
-            <div class="contact-info">
-              <img src="./cars-logo/call logo1.png" alt="Phone Logo" class="call-logo">
-              <span class="phone">123-456-7890</span>
-            </div>
-        </div>
-      </div>
-
+                  <header class="header">
+                    <a class="header-link" href="index.html">
+                        <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
+                    <div class="text-section">
+                      <h2>TARGET AUTOS</h2>
+                        </a>
+                    </div>
+                    <div class="contact-section">
+                        <div class="contact-item">
+                            <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
+                            <p class="phone-number">Phone: +1 123-456-7890</p>
+                        </div>
+                        <div class="contact-item">
+                            <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
+                            <p>Email: example@example.com</p>
+                        </div>
+                    </div>
+                  </header>
           <!-- HEADER 1 ENDS -->
                   <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
                   <h3 class="details-header1">2016 Toyota Tundra Double</h3>
@@ -541,12 +575,12 @@
 
 
                     <div class="icon-grid">
-                      <div class="details-header1">$45,000.00</div>
+                      <div class="details-header1">$23,00.00</div>
                       <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
                         call: 1234567890</div>
                       <div class="item">
                         <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                        Mileage: 36,887mi
+                        Mileage: 54,754 mi
                       </div>
                       <div class="item">
                         <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
@@ -583,13 +617,23 @@
                   <button class="closebtn" onclick="closeModal('modal4')">Close</button>
                   <br>
                   <footer class="footer">
-                    <div class="footer-social">
-                      <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                      <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                      <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Instagram"></a>
-                      <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Twitter"></a>
-                      <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                    <div class="footer-item left">
+                        <p>Address: 123 Main St, City, Country</p>
                     </div>
+                    <div class="footer-item">
+                        <p class="femail">Email: example@example.com</p>
+                        <div class="social-media">
+                            <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                            <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
+                            <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
+                        </div>
+                        <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
+                    </div>
+                    <div class="footer-item right">
+                        <p>Contact: +1234567890</p>
+                    </div>
+    
                   </footer>
                 </div>
               </div>
