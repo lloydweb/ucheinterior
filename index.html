@@ -21,7 +21,7 @@
               </div>
               <div class="contact-info">
                 <img src="./cars-logo/call logo1.png" alt="Phone Logo" class="call-logo">
-                <span class="phone">123-456-7890</span>
+                <span class="phone">1234567890</span>
               </div>
           </div>
         </div>
@@ -165,9 +165,9 @@
                   <p class="shop-text3">$32,300</p>
                   <button class="modalbtn" onclick="openModal('modal1')">Details</button>
                 </div>
-                <div class="modalx" id="modal1">
+                <div class="modal" id="modal1">
                   <body>
-                  <div class="modal-contentx">
+                  <div class="modal-content">
                      
                     <!-- HEADER 1 STARTS -->
         <div class="header">
@@ -251,7 +251,7 @@
                         </div>
                       </div>
                       <br>
-                      <button onclick="closeModal('modal1')">Close</button>
+                      <button class="closebtn" onclick="closeModal('modal1')">Close</button>
                       <br>
                       <footer class="footer">
                          <div class="footer-social">
@@ -276,9 +276,9 @@
                   <button class="modalbtn" onclick="openModal('modal2')">Details</button>
                 </div>
                 
-                <div class="modalx" id="modal2">
+                <div class="modal" id="modal2">
                   <body>
-                  <div class="modal-contentx">
+                  <div class="modal-content">
                      
                     <!-- HEADER 1 STARTS -->
         <div class="header">
@@ -360,7 +360,7 @@
                         </div>
                       </div>
                       <br>
-                      <button onclick="closeModal('modal2')">Close</button>
+                      <button class="closebtn" onclick="closeModal('modal2')">Close</button>
                       <br>
                       <footer class="footer">
                          <div class="footer-social">
@@ -387,9 +387,9 @@
                   <button class="modalbtn" class="modalbtn" onclick="openModal('modal3')">Details</button> 
                 </div>
                 
-                <div class="modalx" id="modal3">
+                <div class="modal" id="modal3">
                  <body>
-                  <div class="modal-contentx">
+                  <div class="modal-content">
                   
                     <!-- HEADER 1 STARTS -->
         <div class="header">
@@ -471,7 +471,7 @@
                       </div>
                     </div>
                     <br>
-                    <button onclick="closeModal('modal3')">Close</button>
+                    <button class="closebtn" onclick="closeModal('modal3')">Close</button>
                     <br>
                     <footer class="footer">
                       <div class="footer-social">
@@ -496,7 +496,7 @@
                 <button class="modalbtn" class="modalbtn" onclick="openModal('modal4')">Details</button> 
               </div>
               
-              <div class="modalx" id="modal4">
+              <div class="modal" id="modal4">
                <body>
                 <div class="modal-content">
                 
@@ -580,7 +580,7 @@
                     </div>
                   </div>
                   <br>
-                  <button onclick="closeModal('modal4')">Close</button>
+                  <button class="closebtn" onclick="closeModal('modal4')">Close</button>
                   <br>
                   <footer class="footer">
                     <div class="footer-social">
@@ -609,20 +609,26 @@
               <div class="line-border2"></div>
 
               <!-- WHY TARGET AUTOS START -->
-
-              <div class="why-cont">
-                <div class="why-head">
+              <div class="why-container">
+                <div class="why-header">
                   <h>Why Choose TargetAuto Sales?</h>
                 </div>
-                <div class="why-img">
-                   <img src="./imgpolicy/7-Day Return Policy.gif" height="150" width="150">
-                   <p>7-Day Return Policy</p>
-                   <img src="./imgpolicy/Certified Pre-Owned.gif" height="150" width="150">
-                   <p>Certified Pre-Owned</p>
-                   <img src="./imgpolicy/Free Test Drives.gif" height="150" width="150">
-                   <p>Free Test Drives</p>
-                   <img src="./imgpolicy/Free Delivery.gif" height="150" width="150">
-                   <p>Free Delivery</p>
+                <div class="why-grid">
+                  <div class="why-grid-item">
+                    <img src="./imgpolicy/7-Day Return Policy.gif" height="150" width="150">
+                    <p>7-Day Return Policy</p>
+                  </div>
+                  <div class="why-grid-item">
+                    <img src="./imgpolicy/Certified Pre-Owned.gif" height="150" width="150">
+                    <p>Certified Pre-Owned</p>
+                  </div>
+                  <div class="why-grid-item">
+                    <img src="./imgpolicy/Free Test Drives.gif" height="150" width="150">
+                    <p>Free Test Drives</p>
+                  </div>
+                  <div class="why-grid-item">
+                    <img src="./imgpolicy/Free Delivery.gif" height="150" width="150">
+                    <p>Free Delivery</p>
                 </div>
               </div>
 
@@ -632,34 +638,23 @@
               <!-- FOOTER -->
 
               <footer class="footer">
-                <div class="footer-left">
-                  <p><a href="#">HOME</a>
-                  <a href="#">ABOUT</a>
-                  <a href="#">CONTACT</a></p>
-                  <p><a href="#">TOYOTA</a>
-                  <a href="#">BENZ</a>
-                  <a href="#">LEXUS</a></p>
-                 
-                 <p><a href="#">HONDA</a>
-                  <a href="#">HYUNDAI</a>
-                  <a href="#">FORD</a></p>
-                  <p><a href="#">LANDROVER</a>
-                  <a href="#">ACURA</a>
-                  <a href="#">JEEP</a></p>
+                <div class="footer-item left">
+                    <p>Address: 123 Main St, City, Country</p>
                 </div>
-                <div class="footer-right">
-                  <p>123 Main Street, City, Country</p>
-                  <p>Phone: (123) 456-7890</p>
-                  
+                <div class="footer-item">
+                    <p class="femail">Email: example@example.com</p>
+                    <div class="social-media">
+                        <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
+                        <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
+                        <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
+                    </div>
+                    <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
                 </div>
-                <div class="footer-social">
-                  <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                  <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                  <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Instagram"></a>
-                  <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Twitter"></a>
-                  <p class="copyright-text">Copyright 2023 © TargetAutos, Inc</p>
+                <div class="footer-item right">
+                    <p>Contact: +1234567890</p>
                 </div>
-              
+
               </footer>
             
 
