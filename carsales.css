@@ -60,6 +60,15 @@
   font-size: 20px; 
 }
 
+.applybtn{
+  font-size: 20px;
+  background-color: #f11f10;
+  color: white;
+  width: 100px;
+}
+
+
+
 /* Item list */
 .item-card {
   border: 1px solid #ddd;
