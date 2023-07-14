@@ -1,33 +1,61 @@
- // Get the search query from the URL parameter
- var searchQuery = new URLSearchParams(window.location.search).get("q");
+function search() {
+  var searchQuery = document.getElementById("searchInput").value;
+  
+  // Perform search logic here and get the search results
+  var searchResults = performSearch(searchQuery);
+  
+  displayResults(searchResults);
+}
 
- // Perform the search and display the results
- // Replace the code below with your own search logic
+function performSearch(query) {
+  // Perform the actual search logic using AJAX requests, API calls, or other methods
+  // Return an array of search results
+  // Example:
+  var results = [
+    { title: "index.html", url: "https://lloydweb.github.io/targetautos/index.html" },
+    { title: "carsales.html", url: "https://lloydweb.github.io/targetautos/carsales.html" },
+    { title: "lexus.html", url: "https://lloydweb.github.io/targetautos/lexus.html" }
+    
+  ];
+  
+  return results;
+}
 
- // Example search results
-// var searchResults = [
-   { title: "Page 1", url: "page1.html" },
-   { title: "Page 2", url: "page2.html" },
-   { title: "Page 3", url: "page3.html" },
- ];//
+function displayResults(results) {
+  var modal = document.getElementById("modal");
+  var searchResultsContainer = document.getElementById("searchResults");
+  
+  searchResultsContainer.innerHTML = "";
+  
+  for (var i = 0; i < results.length; i++) {
+    var result = results[i];
+    
+    var resultElement = document.createElement("a");
+    resultElement.href = result.url;
+    resultElement.textContent = result.title;
+    resultElement.target = "_blank"; // Open result in a new tab/window
+    
+    searchResultsContainer.appendChild(resultElement);
+    searchResultsContainer.appendChild(document.createElement("br"));
+  }
+  
+  modal.style.display = "block";
+}
 
- var searchResultsList = document.querySelector(".search-results ul");
+// Close the modal when the user clicks on the close button (x)
+var closeBtn = document.getElementsByClassName("close")[0];
+closeBtn.onclick = function() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
 
- if (searchResults.length === 0) {
-   var listItem = document.createElement("li");
-   listItem.textContent = "No results found.";
-   searchResultsList.appendChild(listItem);
- } else {
-   searchResults.forEach(function(result) {
-     var listItem = document.createElement("li");
-     var link = document.createElement("a");
-     link.href = result.url;
-     link.textContent = result.title;
-     listItem.appendChild(link);
-     searchResultsList.appendChild(listItem);
-   });
- }
-
+// Close the modal when the user clicks outside of it
+window.onclick = function(event) {
+  var modal = document.getElementById("modal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
  function openSearchResults() {

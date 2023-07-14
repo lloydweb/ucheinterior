@@ -1,0 +1,65 @@
+function search() {
+  var searchQuery = document.getElementById("searchInput").value;
+  
+  // Perform search logic here and get the search results
+  var searchResults = performSearch(searchQuery);
+  
+  displayResults(searchResults);
+}
+
+function performSearch(query) {
+  // Perform the actual search logic using AJAX requests, API calls, or other methods
+  // Return an array of search results
+  // Example:
+  var results = [
+    { title: "index.html", url: "https://lloydweb.github.io/targetautos/index.html" },
+    { title: "carsales.html", url: "https://lloydweb.github.io/targetautos/carsales.html" },
+    { title: "lexus.html", url: "https://lloydweb.github.io/targetautos/lexus.html" }
+    { title: "lexus.html", url: "http://127.0.0.1:5500/lexus.html" }
+  ];
+  
+  return results;
+}
+
+function displayResults(results) {
+  var modal = document.getElementById("modal");
+  var searchResultsContainer = document.getElementById("searchResults");
+  
+  searchResultsContainer.innerHTML = "";
+  
+  for (var i = 0; i < results.length; i++) {
+    var result = results[i];
+    
+    var resultElement = document.createElement("a");
+    resultElement.href = result.url;
+    resultElement.textContent = result.title;
+    resultElement.target = "_blank"; // Open result in a new tab/window
+    
+    searchResultsContainer.appendChild(resultElement);
+    searchResultsContainer.appendChild(document.createElement("br"));
+  }
+  
+  modal.style.display = "block";
+}
+
+// Close the modal when the user clicks on the close button (x)
+var closeBtn = document.getElementsByClassName("close")[0];
+closeBtn.onclick = function() {
+  var modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+// Close the modal when the user clicks outside of it
+window.onclick = function(event) {
+  var modal = document.getElementById("modal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+ function openSearchResults() {
+    var searchQuery = document.getElementById("searchInput").value;
+    var searchUrl = "search.html?q=" + encodeURIComponent(searchQuery);
+    window.open(searchUrl, "Search Results", "width=600,height=400");
+  }

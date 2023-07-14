@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .parent-container {
+      display: inline-block;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    .parent-image {
+      width: 300px;
+      height: 200px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .child-image {
+      width: 100px;
+      height: 80px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent-container">
+    <div class="parent-image">
+      <img class="mainImage" src="./cars/ford 2.png" alt="Parent Image">
+    </div>
+    <div>
+      <img class="child-image" src="./cars/ranger rover.png" alt="Child Image 1">
+      <img class="child-image" src="./cars/toyota truck.jpg" alt="Child Image 2">
+      <img class="child-image" src="container1_child3.jpg" alt="Child Image 3">
+      <img class="child-image" src="container1_child4.jpg" alt="Child Image 4">
+      <img class="child-image" src="container1_child5.jpg" alt="Child Image 5">
+      <img class="child-image" src="container1_child6.jpg" alt="Child Image 6">
+    </div>
+  </div>
+
+  <div class="parent-container">
+    <div class="parent-image">
+      <img class="mainImage" src="./cars/toyota truck.jpg" alt="Parent Image">
+    </div>
+    <div>
+      <img class="child-image" src="./cars/sienna.png" alt="Child Image 1">
+      <img class="child-image" src="./cars/toyota highlander.png" alt="Child Image 2">
+      <img class="child-image" src="container2_child3.jpg" alt="Child Image 3">
+      <img class="child-image" src="container2_child4.jpg" alt="Child Image 4">
+      <img class="child-image" src="container2_child5.jpg" alt="Child Image 5">
+      <img class="child-image" src="container2_child6.jpg" alt="Child Image 6">
+    </div>
+  </div>
+
+  <div class="parent-container">
+    <div class="parent-image">
+      <img class="mainImage" src="./cars/toyota truck.jpg" alt="Parent Image">
+    </div>
+    <div>
+      <img class="child-image" src="./cars/sienna.png" alt="Child Image 1">
+      <img class="child-image" src="./cars/toyota highlander.png" alt="Child Image 2">
+      <img class="child-image" src="container2_child3.jpg" alt="Child Image 3">
+      <img class="child-image" src="container2_child4.jpg" alt="Child Image 4">
+      <img class="child-image" src="container2_child5.jpg" alt="Child Image 5">
+      <img class="child-image" src="container2_child6.jpg" alt="Child Image 6">
+    </div>
+  </div>
+
+  <!-- Add more containers as needed -->
+
+  <script>
+    // Get all container elements
+    var containers = document.getElementsByClassName("parent-container");
+
+    // Add click event listeners to each child image within each container
+    for (var i = 0; i < containers.length; i++) {
+      var container = containers[i];
+
+      // Get the parent image within the current container
+      var parentImage = container.querySelector(".mainImage");
+
+      // Get all child images within the current container
+      var childImages = container.getElementsByClassName("child-image");
+
+      // Add click event listeners to each child image within the current container
+      for (var j = 0; j < childImages.length; j++) {
+        childImages[j].addEventListener("click", function() {
+          // Get the source of the clicked child image
+          var src = this.getAttribute("src");
+
+          // Set the source of the parent image within the current container to the clicked child image source
+          this.parentNode.parentNode.querySelector(".mainImage").setAttribute("src", src);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

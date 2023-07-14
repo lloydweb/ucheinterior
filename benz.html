@@ -2,64 +2,83 @@
 <html>
   <head>
     <title>TargetAutos</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="carsales.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="carsales.css">
     
 
 <!-- HEADER 1 STARTS -->
+     
       <div class="header">
-          <div class="header-left">
-            <p class="logo-name">TARGET AUTOS</p>
-            <img class="logo-img" src="./cars-logo/car logo2.jpeg">
-          </div>
- 
-          <div class="header-right">
-            <img class="email" src="./cars-logo/email logo.jpeg">
-            <p class="emailword">support@carshop.com</p>
-            <img class="call" src="./cars-logo/call logo1.png">
-            <p class="callword">+234-8060000000</p>
-          </div>
-      </div>
-
-      <!-- HEADER 1 ENDS -->
-
-      <!-- HEADER 2 STARTS -->
-
-      <div class="header2-container">
-        <div>
-            <div class="dropdown">
-              <button onclick="toggleSubMenu()">
-                <img src="./cars-logo/menu icon 1.png" alt="Menu Icon" width="30" height="30">
-              </button>
-              <div id="subMenu" class="dropdown-content">
-                <a href="toyota.html" onclick="selectSubMenu(1)">TOYOTA</a>
-                <a href="lexus.html" onclick="selectSubMenu(2)">LEXUS</a>
-                <a href="benz.html" onclick="selectSubMenu(3)">BENZ</a>
-                <a href="#" onclick="selectSubMenu(4)">HONDA</a>
-                <a href="#" onclick="selectSubMenu(5)">ACURA</a>
-              </div>
-            </diV>
-            <a class="home" href="index.html">HOME</a>
-            <a class="shop-cars" href="carsales.html">SHOP</a>
-            <a class="about" href="about.html">ABOUT</a>
-            <a class="contact" href="contact.html">CONTACT</a>
-          </div>
-
-          <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search...">
-            <button class="searchbtn" onclick="search()">Search</button>
-          </div>
-
-          <div class="search-results">
-            <ul>
-              <!-- Search results will be dynamically added here -->
-            </ul>
-          </div>
+        <div class="left-section">
+          <a class="header-link" href="index.html">
+           <img src="./cars-logo/car logo3.jpeg" alt="Logo" class="name-logo">
+           <span class="name">TARGET AUTOS</span></a>
+        </div>
+        <div class="right-section">
+            <div class="contact-info">
+              <img src="./cars-logo/email logo.jpeg" alt="Email Logo" class="email-logo">
+              <span class="email">example@example.com</span>
+            </div>
+            <div class="contact-info">
+              <img src="./cars-logo/call logo1.png" alt="Phone Logo" class="call-logo">
+              <span class="phone">123-456-7890</span>
+            </div>
         </div>
       </div>
-      <script src="search.js"></script>
-      <script src="dropdown-menu.js"></script>
-  </head>
+
+          <!-- HEADER 1 ENDS -->
+
+          <!-- HEADER 2 STARTS -->
+
+          <div class="header2-container">
+            <div class="left-section">
+                <div class="dropdown">
+                  <button onclick="toggleSubMenu()">
+                    <img src="./cars-logo/menu icon 1.png" alt="Menu Icon" width="30" height="30">
+                  </button>
+                  <div id="subMenu" class="dropdown-content">
+                    <a href="toyota.html" onclick="selectSubMenu(1)">TOYOTA</a><hr>
+                    <a href="lexus.html" onclick="selectSubMenu(2)">LEXUS</a><hr>
+                    <a href="benz.html" onclick="selectSubMenu(3)">BENZ</a><hr>
+                    <a href="#" onclick="selectSubMenu(4)">HONDA</a><hr>
+                    <a href="#" onclick="selectSubMenu(5)">ACURA</a><hr>
+                  </div>
+                </diV>
+            </div>
+
+            <div class="middle-section">
+              <input class="search" type="text" id="searchInput" placeholder="Search">
+              <button class="searchbtn" onclick="search()">Search</button>
+
+              <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div id="searchResults"></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="right-section">
+              <a class="home" href="index.html">HOME</a>
+              <a class="shop-cars" href="carsales.html">SHOP</a>
+              <a class="about" href="about.html">ABOUT</a>
+              <a class="contact" href="contact.html">CONTACT</a>
+            </div>
+
+            
+          </div>
+
+              <div class="search-results">
+                <ul>
+                  <!-- Search results will be dynamically added here -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <script src="search.js"></script>
+          <script src="dropdown-menu.js"></script>
+      </head>
 
 <!-- HEADER 2 ENDS -->
 
