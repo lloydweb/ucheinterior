@@ -177,7 +177,7 @@ footer .glyphicon {
 }
 
 .we-container {
-  max-width: 1000px; /* Adjust the maximum width as needed */
+  mx-width: 1000px; /* Adjust the maximum width as needed */
   margin: 2px auto;
   background-color: #000;
   color: white;
