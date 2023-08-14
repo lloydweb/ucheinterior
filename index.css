@@ -24,7 +24,7 @@ h4 {
   font-family: Montserrat, sans-serif;
 }
 .container-fluid {
-  padding: 60px 50px;
+  padding: 50px 40px;
 }
 .bg-grey {
   background-color: #f6f6f6;
@@ -83,7 +83,7 @@ h4 {
 .panel-heading {
   color: #fff !important;
   background-color: #f4511e !important;
-  padding: 25px;
+  padding: 50px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -160,7 +160,7 @@ footer .glyphicon {
     -webkit-transform: translateY(0%);
   }
 }
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 968px) {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
