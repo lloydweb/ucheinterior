@@ -160,7 +160,7 @@ footer .glyphicon {
     -webkit-transform: translateY(0%);
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
   .col-sm-4 {
     text-align: center;
     margin: 25px 0;
@@ -174,4 +174,95 @@ footer .glyphicon {
   .logo {
     font-size: 150px;
   }
+}
+
+.we-container {
+  max-width: 1000px; /* Adjust the maximum width as needed */
+  margin: 2px auto;
+  background-color: #000;
+  color: white;
+  
+}
+
+.we-header {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+.we-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.we-grid-item {
+  flex: 1 0 25%; /* Adjust the percentage value to change the number of images in a row */
+  max-width: 25%; /* Adjust the percentage value to change the number of images in a row */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.we-grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.we-grid-item p {
+  margin-top: 5px;
+  font-size: 14px;
+  margin: 5px;
+}
+
+
+.shop-group{
+  padding: 1em;
+  position: relative;
+  margin-left: 20px;
+  box-shadow: 10px 10px 30px rgba(139, 212, 133, 0.973);
+  align-content: center;
+  margin: 10px;
+
+}
+
+
+.shop-img{
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+  padding: 1em;
+
+}
+
+.shop-text1{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+
+}
+.shop-text2{
+  font-size: 15px;
+  text-align: center;
+
+}
+.shop-text3{
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(2, 189, 2);
+}
+
+.tag{
+
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  background-color: #0c0a0a;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: none;
+
 }
