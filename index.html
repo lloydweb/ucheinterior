@@ -1,712 +1,423 @@
 <!DOCTYPE html>
-<html>
-<body>
-        <head>
-          <title>carshop</title>
-          <link rel="stylesheet" type="text/css" href="index.css">
-          
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>INTERIOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="indexautos.css">
+  <link rel="stylesheet" type="text/css" href="shop.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
 
-          
-    <!-- HEADER 1 STARTS -->
-    <header class="header">
-      <a class="header-link" href="index.html">
-          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
-      <div class="text-section">
-        <h2>TARGET AUTOS</h2>
-          </a>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="./symbol img/interior logo.png" height="100" width="150"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#catergories">CATEGORIES</a></li>
+        <li><a href="#new">NEW ARRIVAL</a></li>
+        <li><a href="#shop">SHOP NOW</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>UCHE INTERIOR</h1> 
+  <p>We specialize in all general interior decoration</p> 
+  <form>
+    <div class="input-group">
+      <!-- <input type="email" class="form-control" size="50" placeholder="Email Address" required> 
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>-->
       </div>
-      <div class="contact-section">
-          <div class="contact-item">
-              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
-              <p class="phone-number">Phone: +1 123-456-7890</p>
-          </div>
-          <div class="contact-item">
-              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
-              <p>Email: example@example.com</p>
-          </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="catergories" class="container-fluid text-center">
+  <h2>CATEGORIES</h2>
+  <div class="why-container">
+    <div class="why-header">
+      <h>We sell</h>
+    </div>
+    <div class="why-grid">
+      <div class="why-grid-item">
+        <img src="./symbol img/windowblind.jpeg" height="150" width="150">
+        <p>WINDOW BLIND</p>
       </div>
-    </header>
-
-            <!-- HEADER 1 ENDS -->
-
-            <!-- HEADER 2 STARTS -->
-
-            <div class="header2-container">
-              <div class="left-section">
-                  <div class="dropdown">
-                    <button onclick="toggleSubMenu()">
-                      <img src="./cars-logo/menu icon 1.png" alt="Menu Icon" width="30" height="30">
-                    </button>
-                    <div id="subMenu" class="dropdown-content">
-                      <a href="toyota.html" onclick="selectSubMenu(1)">TOYOTA</a><hr>
-                      <a href="lexus.html" onclick="selectSubMenu(2)">LEXUS</a><hr>
-                      <a href="benz.html" onclick="selectSubMenu(3)">BENZ</a><hr>
-                      <a href="#" onclick="selectSubMenu(4)">HONDA</a><hr>
-                      <a href="#" onclick="selectSubMenu(5)">ACURA</a><hr>
-                    </div>
-                  </diV>
-              </div>
-
-              <div class="middle-section">
-                <input class="search" type="text" id="searchInput" placeholder="Search">
-                <button class="searchbtn" onclick="search()">Search</button>
-
-                <div id="modal" class="modal">
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div id="searchResults"></div>
-                  </div>
-                </div>
-              </div>
+      <div class="why-grid-item">
+        <img src="./symbol img/curtain.png" height="150" width="150">
+        <p>CURTAINS</p>
+      </div>
+      <div class="why-grid-item">
+        <img src="./symbol img/wallpaper.png" height="150" width="150">
+        <p>WALLPAPER</p>
+      </div>
+      <div class="why-grid-item">
+        <img src="./symbol img/centerrug.jpg" height="150" width="150">
+        <p>CENTER RUG</p>
+      </div>
+  </div>  
+</div>
 
 
-              <div class="right-section">
-                <a class="home" href="index.html">HOME</a>
-                <a class="shop-cars" href="carsales.html">SHOP</a>
-                <a class="about" href="about.html">ABOUT</a>
-                <a class="contact" href="contact.html">CONTACT</a>
-              </div>
+<!-- Container (New Arrival Section) -->
+<div id="new" class="container-fluid">
+  <div class="text-center">
+    <h2>New Arrival</h2>
+    <h4>Make your choice</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+       
+         <!-- MODAL 4 -->
+        <div class="shop-group">
+          <img class="shop-img" src="./img/blind1.jpeg">
+          <span class="tag">NEW</span>
+          <p class="shop-text1">windowblind</p>
+          <p class="shop-text2">7 X 6</p>
+          <p class="shop-text3">20,000</p>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Details</button>
+        </div>
+      </div>
+    </div>
+        
+        
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        
+         <!-- MODAL 4 -->
 
-              
-            </div>
-
-                <div class="search-results">
-                  <ul>
-                    <!-- Search results will be dynamically added here -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <script src="search.js"></script>
-            <script src="dropdown-menu.js"></script>
-        </head>
-
-<!-- HEADER 2 ENDS -->
-
-
-        <body>
+        <div class="shop-group">
+          <img class="shop-img" src="./img/cotton.jpeg">
+          <span class="tag">NEW</span>
+          <p class="shop-text1">Curtain</p>
+          <p class="shop-text2">All size Available</p>
+          <p class="shop-text3">30,500</p>
           
-    <!-- SLIDER STARTS -->
-
-          <div id="slider" class="slider-container">
-            <div class="slide">
-              <img class="slider-image" src="./wallpapper/benz.jpg" alt="Slider Image 1">
-              <div class="slider-text">
-                <h2>
-                    TARGET AUTOS
-                </h2>
-                <p>Explore our vast selection of vehicles and find the car of your dreams.</p>
-                <p>We offer competitive pricing and financing options</p>
-                  <p>to make your car buying experience smooth and hassle-free</p>
-              </div>
-            </div>
-            <div class="slide">
-              <img class="slider-image" src="./wallpapper/lexus.jpg" alt="Slider Image 2">
-              <div class="slider-text">
-                <h2>
-                    New Cars & Used Cars
-                </h2>
-                <p>Find the perfect car that suits your needs and budget.</p> 
-                <p>We offer a wide range of new and pre-owned cars from top brands in the market. </p>
-                <p>Our pre-owned cars undergo thorough inspections to ensure top quality and performance.</p>
-              </div>
-            </div>
-            <div class="slide">
-              <img class="slider-image" src="./wallpapper/toyota.jpg" alt="Slider Image 3">
-              <div class="slider-text">
-                <h2>
-                    Featured Cars
-                </h2>
-                <p>Discover our featured cars and take advantage of our limited-time offers.</p> 
-                <P>From sleek sports cars to family-friendly SUVs, </P>
-                <p>we have a car for every lifestyle and preference.</p>
-              </div>
-            </div>
-          </div>
-          <div class="line-border1"></div>
-
-           <!-- SLIDER ENDS -->
-          
-      <!-- BROWSE BY MAKE STARTS -->
-      <section>
+        </div>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Details</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
         
-            <div class="make">Browse By Make</div>
-            <div class="filter-tags">
-              <div class="car-make">
-              
-                <a href="benz.html"><img class="a" src="./cars-logo/benz1.jpeg"></a>
-                <a href="toyota.html"><img class="a" src="./cars-logo/toyota1.jpeg"></a>
-                <a href="lexus.html"><img class="a" src="./cars-logo/lexus1.jpeg"></a>
-                <a href="honda.html"><img class="a" src="./cars-logo/honda1.jpeg"></a>
-                <a href="bmw.html"><img class="a" src="./cars-logo/bmw1.jpeg"></a>
-                <a href="nissan.html"><img class="a" src="./cars-logo/nissan.jpeg"></a>
-                <a href="ford.html"><img class="a" src="./cars-logo/ford1.jpeg"></a>
-                <a href="jeep.html"><img class="a" src="./cars-logo/jeep1.png"></a>
-                <a href="land-rover.html"><img class="a" src="./cars-logo/land rover1.jpeg"></a>
-                <a href="hyundai.html"><img class="a" src="./cars-logo/hyundai1.jpeg"></a>
-              </div>
-            </div><br><hr><br>
+         <!-- MODAL 4 -->
 
-          <!-- BROWSE BY MAKE ENDS -->
+        <div class="shop-group">
+          <img class="shop-img" src="./img/wallpaper.jpeg">
+          <span class="tag">NEW</span>
+          <p class="shop-text1">Wallpaper</p>
+          <p class="shop-text2">All size Available</p>
+          <p class="shop-text3">15,500</p>
 
-          <!-- SHOP STARTS -->
-
-          <div class="shop">Explore Our Car Collection</div>
-            <p class="shop-get">GET YOUR DREAM CAR AT A GREAT PRICE</p>
-
-
-            <!-- MODAL 1 -->
-
-              <div class="shop-container">
-                <div class="shop-group">
-                  <img class="shop-img" src="./cars/benz gle.png">
-                  <span class="tag">NEW</span>
-                  <p class="shop-text1">2018 Mercedes-Benz GLE350 4MATIC Sport</p>
-                  <p class="shop-text2">Mileage: 43,583 mi</p>
-                  <p class="shop-text3">$32,300</p>
-                  <button class="modalbtn" onclick="openModal('modal1')">Details</button>
-                </div>
-                <div class="modal" id="modal1">
-                <body>
-                  <div class="modal-content">
-                     
-                    <!-- HEADER 1 STARTS -->
-                    <header class="header">
-                      <a class="header-link" href="index.html">
-                          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
-                      <div class="text-section">
-                        <h2>TARGET AUTOS</h2>
-                          </a>
-                      </div>
-                      <div class="contact-section">
-                          <div class="contact-item">
-                              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
-                              <p class="phone-number">Phone: +1 123-456-7890</p>
-                          </div>
-                          <div class="contact-item">
-                              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
-                              <p>Email: example@example.com</p>
-                          </div>
-                      </div>
-                    </header>
-
-            <!-- HEADER 1 ENDS -->
-                       <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
-                       <h3 class="details-header1">2018 Mercedes-Benz GLE350 4MATIC Sport</h3>
-   
-   
-                      <div class="grid-container">
-                        
-                          <div class="parent-container">
-                            <div class="parent-image">
-                              <img class="mainImage" src="./benz GLE350 2018/1.jpg" alt="Parent Image">
-                            </div>
-                            <div class="child-container">
-                              <img class="child-image" src="./benz GLE350 2018/1.jpg" alt="Child Image 1">
-                              <img class="child-image" src="./benz GLE350 2018/2.jpg" alt="Child Image 2">
-                              <img class="child-image" src="./benz GLE350 2018/3.jpg" alt="Child Image 3">
-                              <img class="child-image" src="./benz GLE350 2018/4.jpg" alt="Child Image 4">
-                              <img class="child-image" src="./benz GLE350 2018/5.jpg" alt="Child Image 5">
-                              <img class="child-image" src="./benz GLE350 2018/6.jpg" alt="Child Image 6">
-                              <img class="child-image" src="./benz GLE350 2018/7.jpg" alt="Child Image 6">
-                            </div>
-                          </div>
-   
-   
-                        <div class="icon-grid">
-                           <div class="details-header1">$32,300.00</div>
-                           <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
-                             call: 1234567890</div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                             Mileage: 43,583 mi
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
-                             Structure: 4 Doors
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/engine.png" height="50" width="50"></span>
-                             Engine: V6
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/transmission.png" height="50" width="50"></span>
-                             Transmission: Auto
-                           </div>
-                           
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/drivetrain.png" height="50" width="50"></span>
-                             Drivetrain: 4WD
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/key.png" height="50" width="50"></span>
-                             keyless start
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/camera.png" height="50" width="50"></span>
-                             Backup camera
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/navigation.png" height="50" width="50"></span>
-                             Navigation
-                           </div>
-                        </div>
-                      </div>
-                      <br>
-                      <button class="closebtn" onclick="closeModal('modal1')">Close</button>
-                      <br>
-                      <footer class="footer">
-                        <div class="footer-item left">
-                            <p>Address: 123 Main St, City, Country</p>
-                        </div>
-                        <div class="footer-item">
-                            <p class="femail">Email: example@example.com</p>
-                            <div class="social-media">
-                                <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                                <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                                <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
-                                <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
-                            </div>
-                            <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
-                        </div>
-                        <div class="footer-item right">
-                            <p>Contact: +1234567890</p>
-                        </div>
-        
-                      </footer>
-                    </div>
-                  </div>
-                </body>
-
-                 <!-- MODAL 2 -->
-
-                <div class="shop-group">
-                  <img class="shop-img" src="./cars/ford 2.png">
-                  <span class="tag">NEW</span>
-                  <p class="shop-text1">2018 Ford Explorer Limited Sport</p>
-                  <p class="shop-text2">Mileage: 29,943 mi</p>
-                  <p class="shop-text3">$40,500</p>
-                  <button class="modalbtn" onclick="openModal('modal2')">Details</button>
-                </div>
-                
-                <div class="modal" id="modal2">
-                  <body>
-                  <div class="modal-content">
-                     
-                    <!-- HEADER 1 STARTS -->
-                    <header class="header">
-                      <a class="header-link" href="index.html">
-                          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
-                      <div class="text-section">
-                        <h2>TARGET AUTOS</h2>
-                          </a>
-                      </div>
-                      <div class="contact-section">
-                          <div class="contact-item">
-                              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
-                              <p class="phone-number">Phone: +1 123-456-7890</p>
-                          </div>
-                          <div class="contact-item">
-                              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
-                              <p>Email: example@example.com</p>
-                          </div>
-                      </div>
-                    </header>
-            <!-- HEADER 1 ENDS -->
-                       <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
-                       <h3 class="details-header1">2016 Ford Explorer Limited Sport Utility 4D</h3>
-   
-   
-                      <div class="grid-container">
-                        <div class="parent-container">
-                          <div class="parent-image">
-                            <img class="mainImage" src="./ford explorer 2016/1.jpg" alt="Parent Image">
-                          </div>
-                          <div class="child-container">
-                            <img class="child-image" src="./ford explorer 2016/1.jpg" alt="Child Image 1">
-                            <img class="child-image" src="./ford explorer 2016/2.jpg" alt="Child Image 2">
-                            <img class="child-image" src="./ford explorer 2016/3.jpg" alt="Child Image 3">
-                            <img class="child-image" src="./ford explorer 2016/4.jpg" alt="Child Image 4">
-                            <img class="child-image" src="./ford explorer 2016/5.jpg" alt="Child Image 5">
-                            <img class="child-image" src="./ford explorer 2016/6.jpg" alt="Child Image 6">
-                          </div>
-                        </div>
-   
-   
-                        <div class="icon-grid">
-                           <div class="details-header1">$40,500.00</div>
-                           <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
-                             call: 1234567890</div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                             Mileage: 29,943 mi
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
-                             Structure: 4 Doors
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/engine.png" height="50" width="50"></span>
-                             Engine: V6
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/transmission.png" height="50" width="50"></span>
-                             Transmission: Auto
-                           </div>
-                           
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/drivetrain.png" height="50" width="50"></span>
-                             Drivetrain: 4WD
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/key.png" height="50" width="50"></span>
-                             keyless start
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/camera.png" height="50" width="50"></span>
-                             Backup camera
-                           </div>
-                           <div class="item">
-                             <span class="icon"><img src="./imgpolicy/navigation.png" height="50" width="50"></span>
-                             Navigation
-                           </div>
-                        </div>
-                      </div>
-                      <br>
-                      <button class="closebtn" onclick="closeModal('modal2')">Close</button>
-                      <br>
-                      <footer class="footer">
-                        <div class="footer-item left">
-                            <p>Address: 123 Main St, City, Country</p>
-                        </div>
-                        <div class="footer-item">
-                            <p class="femail">Email: example@example.com</p>
-                            <div class="social-media">
-                                <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                                <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                                <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
-                                <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
-                            </div>
-                            <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
-                        </div>
-                        <div class="footer-item right">
-                            <p>Contact: +1234567890</p>
-                        </div>
-        
-                      </footer>
-                    </div>
-                  </div>
-
-                
-                
-                <!-- MODAL 3 -->
+        </div>
       
-                <div class="shop-group">
-                  <img class="shop-img" src="./cars/lexus.png">
-                  <span class="tag">NEW</span>
-                  <p class="shop-text1">2018 Lexus GX460 Sport</p>
-                  <p class="shop-text2">Mileage: 41,754 mi</p>
-                  <p class="shop-text3">$49,500</p>
-                  <button class="modalbtn" class="modalbtn" onclick="openModal('modal3')">Details</button> 
-                </div>
-                
-                <div class="modal" id="modal3">
-                 <body>
-                  <div class="modal-content">
-                  
-                    <!-- HEADER 1 STARTS -->
-                    <header class="header">
-                      <a class="header-link" href="index.html">
-                          <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
-                      <div class="text-section">
-                        <h2>TARGET AUTOS</h2>
-                          </a>
-                      </div>
-                      <div class="contact-section">
-                          <div class="contact-item">
-                              <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
-                              <p class="phone-number">Phone: +1 123-456-7890</p>
-                          </div>
-                          <div class="contact-item">
-                              <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
-                              <p>Email: example@example.com</p>
-                          </div>
-                      </div>
-                    </header>
-
-            <!-- HEADER 1 ENDS -->
-                    <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
-                    <h3 class="details-header1">2018 Lexus GX460 Sport</h3>
+        <div class="panel-footer">
+          <button class="btn btn-lg">Details</button>
+        </div> 
+      </div>   
+    </div>    
+  </div>
+</div>
 
 
-                    <div class="grid-container">
-                      <div class="parent-container">
-                        <div class="parent-image">
-                          <img class="mainImage" src="./Lexus GX460/1.jpg" alt="Parent Image">
-                        </div>
-                        <div class="child-container">
-                          <img class="child-image" src="./Lexus GX460/1.jpg" alt="Child Image 1">
-                          <img class="child-image" src="./Lexus GX460/2.jpg" alt="Child Image 2">
-                          <img class="child-image" src="./Lexus GX460/3.jpg" alt="Child Image 3">
-                          <img class="child-image" src="./Lexus GX460/4.jpg" alt="Child Image 4">
-                          <img class="child-image" src="./Lexus GX460/5.jpg" alt="Child Image 5">
-                          <img class="child-image" src="./Lexus GX460/6.jpg" alt="Child Image 6">
-                        </div>
-                      </div>
+<!-- Container (Shop Section) -->
+<div id="shop" class="container-fluid text-center">
+  <div class="text-center">
+    <h2>SHOP NOW</h2>
+  </div>
+
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default text-center">
+     
+       <!-- MODAL 4 -->
+      <div class="shop-group">
+        <img class="shop-img" src="./img/blind1.jpeg">
+        <span class="tag">NEW</span>
+        <p class="shop-text1">windowblind</p>
+        <p class="shop-text2">7 X 6</p>
+        <p class="shop-text3">20,000</p>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-lg">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default text-center">
+     
+       <!-- MODAL 4 -->
+      <div class="shop-group">
+        <img class="shop-img" src="./img/blind1.jpeg">
+        <span class="tag">NEW</span>
+        <p class="shop-text1">windowblind</p>
+        <p class="shop-text2">7 X 6</p>
+        <p class="shop-text3">20,000</p>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-lg">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default text-center">
+     
+       <!-- MODAL 4 -->
+      <div class="shop-group">
+        <img class="shop-img" src="./img/blind1.jpeg">
+        <span class="tag">NEW</span>
+        <p class="shop-text1">windowblind</p>
+        <p class="shop-text2">7 X 6</p>
+        <p class="shop-text3">20,000</p>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-lg">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default text-center">
+     
+       <!-- MODAL 4 -->
+      <div class="shop-group">
+        <img class="shop-img" src="./img/blind1.jpeg">
+        <span class="tag">NEW</span>
+        <p class="shop-text1">windowblind</p>
+        <p class="shop-text2">7 X 6</p>
+        <p class="shop-text3">20,000</p>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-lg">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default text-center">
+     
+       <!-- MODAL 4 -->
+      <div class="shop-group">
+        <img class="shop-img" src="./img/blind1.jpeg">
+        <span class="tag">NEW</span>
+        <p class="shop-text1">windowblind</p>
+        <p class="shop-text2">7 X 6</p>
+        <p class="shop-text3">20,000</p>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-lg">Details</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-12">
+    <div class="panel panel-default text-center">
+     
+       <!-- MODAL 4 -->
+      <div class="shop-group">
+        <img class="shop-img" src="./img/blind1.jpeg">
+        <span class="tag">NEW</span>
+        <p class="shop-text1">windowblind</p>
+        <p class="shop-text2">7 X 6</p>
+        <p class="shop-text3">20,000</p>
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-lg">Details</button>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-lg"><lo><a href="shop.html">View More</a></lo></button>
+</div>
 
 
-                      <div class="icon-grid">
-                        <div class="details-header1">$49,500.00</div>
-                        <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
-                          call: 1234567890</div>
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                          Mileage: 41,754 mi
-                        </div>
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
-                          Structure: 4 Doors
-                        </div>
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/engine.png" height="50" width="50"></span>
-                          Engine: V6
-                        </div>
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/transmission.png" height="50" width="50"></span>
-                          Transmission: Auto
-                        </div>
-                        
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/drivetrain.png" height="50" width="50"></span>
-                          Drivetrain: 4WD
-                        </div>
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/key.png" height="50" width="50"></span>
-                          keyless start
-                        </div>
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/camera.png" height="50" width="50"></span>
-                          Backup camera
-                        </div>
-                        <div class="item">
-                          <span class="icon"><img src="./imgpolicy/navigation.png" height="50" width="50"></span>
-                          Navigation
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-                    <button class="closebtn" onclick="closeModal('modal3')">Close</button>
-                    <br>
-                    <footer class="footer">
-                      <div class="footer-item left">
-                          <p>Address: 123 Main St, City, Country</p>
-                      </div>
-                      <div class="footer-item">
-                          <p class="femail">Email: example@example.com</p>
-                          <div class="social-media">
-                              <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                              <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                              <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
-                              <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
-                          </div>
-                          <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
-                      </div>
-                      <div class="footer-item right">
-                          <p>Contact: +1234567890</p>
-                      </div>
-      
-                    </footer>
-                  </div>
-                </div>
-
-               <!-- MODAL 4 -->
-
-               <div class="shop-group">
-                <img class="shop-img" src="./cars/toyota truck.jpg">
-                <span class="tag">NEW</span>
-                <p class="shop-text1">2016 Toyota Tundra Double</p>
-                <p class="shop-text2">Mileage: 54,754 mi</p>
-                <p class="shop-text3">$23,500</p>
-                <button class="modalbtn" class="modalbtn" onclick="openModal('modal4')">Details</button> 
-              </div>
-              
-              <div class="modal" id="modal4">
-               <body>
-                <div class="modal-content">
-                
-                  <!-- HEADER 1 STARTS -->
-                  <header class="header">
-                    <a class="header-link" href="index.html">
-                        <img  class="name-logo" src="./cars-logo/car logo3.jpeg" alt="Logo">
-                    <div class="text-section">
-                      <h2>TARGET AUTOS</h2>
-                        </a>
-                    </div>
-                    <div class="contact-section">
-                        <div class="contact-item">
-                            <img  class="contact-icon" src="./cars-logo/call logo1.png" alt="Phone Icon">
-                            <p class="phone-number">Phone: +1 123-456-7890</p>
-                        </div>
-                        <div class="contact-item">
-                            <img  class="contact-icon" src="./cars-logo/email logo.jpeg" alt="Email Icon">
-                            <p>Email: example@example.com</p>
-                        </div>
-                    </div>
-                  </header>
-          <!-- HEADER 1 ENDS -->
-                  <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
-                  <h3 class="details-header1">2016 Toyota Tundra Double</h3>
 
 
-                  <div class="grid-container">
-                    <div class="parent-container">
-                      <div class="parent-image">
-                        <img class="mainImage" src="./toyota tundra 2016/1.jpg" alt="Parent Image">
-                      </div>
-                      <div class="child-container">
-                        <img class="child-image" src="./toyota tundra 2016/1.jpg" alt="Child Image 1">
-                        <img class="child-image" src="./toyota tundra 2016/2.jpg" alt="Child Image 2">
-                        <img class="child-image" src="./toyota tundra 2016/3.jpg" alt="Child Image 3">
-                        <img class="child-image" src="./toyota tundra 2016/4.jpg" alt="Child Image 4">
-                        <img class="child-image" src="./toyota tundra 2016/5.jpg" alt="Child Image 5">
-                        <img class="child-image" src="./toyota tundra 2016/6.jpg" alt="Child Image 6">
-                      </div>
-                    </div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>We offer best service.</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src="./symbol img/install.png" alt="install">
+      <h4>Installation</h4>
+      <p>...........................</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="glyphicon img-rounded" src="./symbol img/service.jpeg" alt="service">
+      <h4>Service / Maintance</h4>
+      <p>...........................</p>
+    </div>
+    <div class="col-sm-4">
+      <img class="img-rounded" src="./symbol img/delivery.png" alt="delivery">
+      <h4>Fast delivery</h4>
+      <p>...........................</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="team" class="container-fluid text-center bg-grey">
+  <h2>Meet OUR Team</h2><br>
+  <h4></h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img class="img-circle" src="./symbol img/img icon.png" alt="service1" width="10" height="10">
+        <p><strong>MR .........</strong></p>
+        <p>C.E.O</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./symbol img/img icon.png" alt="service2" width="100" height="100">
+        <p><strong>MR .........</strong></p>
+        <p>MD</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="./symbol img/img icon.png" alt="service3" width="100" height="100">
+        <p><strong>MR ..........</strong></p>
+        <p>MD</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
 
 
-                    <div class="icon-grid">
-                      <div class="details-header1">$23,00.00</div>
-                      <div class="details-header2"><span class="icon"><img src="./imgpolicy/icon-phone.png" height="50" width="50"></span>
-                        call: 1234567890</div>
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/icon-mileage.png" height="50" width="50"></span>
-                        Mileage: 54,754 mi
-                      </div>
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/icon-structure.png" height="50" width="50"></span>
-                        Structure: 4 Doors
-                      </div>
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/engine.png" height="50" width="50"></span>
-                        Engine: V6
-                      </div>
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/transmission.png" height="50" width="50"></span>
-                        Transmission: Auto
-                      </div>
-                      
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/drivetrain.png" height="50" width="50"></span>
-                        Drivetrain: 4WD
-                      </div>
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/key.png" height="50" width="50"></span>
-                        keyless start
-                      </div>
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/camera.png" height="50" width="50"></span>
-                        Backup camera
-                      </div>
-                      <div class="item">
-                        <span class="icon"><img src="./imgpolicy/navigation.png" height="50" width="50"></span>
-                        Navigation
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <button class="closebtn" onclick="closeModal('modal4')">Close</button>
-                  <br>
-                  <footer class="footer">
-                    <div class="footer-item left">
-                        <p>Address: 123 Main St, City, Country</p>
-                    </div>
-                    <div class="footer-item">
-                        <p class="femail">Email: example@example.com</p>
-                        <div class="social-media">
-                            <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                            <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                            <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
-                            <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
-                        </div>
-                        <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
-                    </div>
-                    <div class="footer-item right">
-                        <p>Contact: +1234567890</p>
-                    </div>
-    
-                  </footer>
-                </div>
-              </div>
-            </div>
 
-             <!-- MODAL END -->
-           
-             <!-- VIEW MORE START-->
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About</h2><br>
+      <h4>What can we offer that others can’t?</h4><br>
+      <p>...........................</p> 
+        <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <img class="glyphicon glyphicon-signal logo slideanim" src="./symbol img/interior1.jpeg" alt="img1" height="400" width="400">
+    </div>
+  </div>
+</div>
 
-              <div class="view-cont">
-                <button class="viewbtn">
-                  <a class="view-link" href="carsales.html">View More</a></button>
-              </div>
-        </section>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <img class="glyphicon glyphicon-globe logo slideanim" src="./symbol img/interior2.jpeg" alt="img3" height="400" width="400">
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> ..................</h4><br>
+      <p><strong></strong> .....................</p>
+    </div>
+  </div>
+</div>
 
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Warri, Delta state, Nigeria</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1234567890</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-              <div class="line-border2"></div>
+<!-- Image of location/map -->
+<img src="./symbol img/images.jpeg" class="w3-image w3-greyscale-min slideanim" style="width:100%" height="0%">
 
-              <!-- WHY TARGET AUTOS START -->
-              <div class="why-container">
-                <div class="why-header">
-                  <h>Why Choose TargetAuto Sales?</h>
-                </div>
-                <div class="why-grid">
-                  <div class="why-grid-item">
-                    <img src="./imgpolicy/7-Day Return Policy.gif" height="150" width="150">
-                    <p>7-Day Return Policy</p>
-                  </div>
-                  <div class="why-grid-item">
-                    <img src="./imgpolicy/Certified Pre-Owned.gif" height="150" width="150">
-                    <p>Certified Pre-Owned</p>
-                  </div>
-                  <div class="why-grid-item">
-                    <img src="./imgpolicy/Free Test Drives.gif" height="150" width="150">
-                    <p>Free Test Drives</p>
-                  </div>
-                  <div class="why-grid-item">
-                    <img src="./imgpolicy/Free Delivery.gif" height="150" width="150">
-                    <p>Free Delivery</p>
-                </div>
-              </div>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>copyright reserved <a href="#" title="Visit w3schools">uche interior</p>
+</footer>
 
-              <!--WHY TARGET AUTOS END -->
-
-
-              <!-- FOOTER -->
-
-              <footer class="footer">
-                <div class="footer-item left">
-                    <p>Address: 123 Main St, City, Country</p>
-                </div>
-                <div class="footer-item">
-                    <p class="femail">Email: example@example.com</p>
-                    <div class="social-media">
-                        <a href="#"><img src="./imgpolicy/icon-whatsapp.png" alt="Whatsapp"></a>
-                        <a href="#"><img src="./imgpolicy/icon-facebook.png" alt="Facebook"></a>
-                        <a href="#"><img src="./imgpolicy/icon-instagram.png" alt="Twitter"></a>
-                        <a href="#"><img src="./imgpolicy/icon-twitter.png" alt="Instagram"></a>
-                    </div>
-                    <p class="copyright">&copy; Copyright 2023 TargetAutos, Inc</p>
-                </div>
-                <div class="footer-item right">
-                    <p>Contact: +1234567890</p>
-                </div>
-
-              </footer>
-            
-
-      <script src="category.js"></script>
-      <script src="slide-head.js"></script>
-      <script src="parent.js"></script>
+<script src="index.js"></script>
+<script src="parent.js"></script>
       <script src="modal.js"></script>
 
 
-    </body>
+</body>
 </html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>INTERIOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="indexautos.css">
+  <link rel="stylesheet" type="text/css" href="shop.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="./symbol img/interior logo.png" height="100" width="150"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#catergories">CATEGORIES</a></li>
+        <li><a href="#new">NEW ARRIVAL</a></li>
+        <li><a href="#shop">SHOP NOW</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER 2 ENDS -->
+
+</head>
+<body>
+  <div class="shop">Explore Our Car Collection</div><br>
+  <div class="sales-container">
+    <div class="filter-column">
+      <div class="filter-section">
+        <h2 class="filter-title">Filter By Make</h2>
+        <div class="filter-tags">
+          <span class="filter-tag" onclick="filterCategory('all')">All</span>
+          <span class="filter-tag" onclick="filterCategory('windowblind')">WINDOW BLIND</span>
+          <span class="filter-tag" onclick="filterCategory('wallpaper')">WALL PAPER</span>
+          <span class="filter-tag" onclick="filterCategory('curtain')">CURTAIN</span>
+          <span class="filter-tag" onclick="filterCategory('wallpicture')">WALL PICTURE</span>
+          <span class="filter-tag" onclick="filterCategory('centerrug')">CENTER RUG</span>
+  
+       
+          <!-- Add more category tags as needed -->
+        </div>
+      </div>
+      <div class="filter-section">
+        <h2 class="filter-title">Filter By Price</h2>
+        <div class="filter-input">
+          <label for="priceMin">Min:</label>
+          <input class="filter-price" type="number" id="priceMin" min="0">
+        </div>
+        <div class="filter-input">
+          <label for="priceMax">Max:</label>
+          <input class="filter-price" type="number" id="priceMax" min="0">
+        </div>
+        <div class="filter-input">
+          <button class="applybtn" onclick="applyFilters()">Apply</button>
+        </div>
+      </div>
+    </div>
+   
+   
+       <!-- ITEMS STARTS-->
+
+    <div class="item-list" id="itemList">
+
+        <!-- ITEMS 1--> 
+
+      <div class="item-card windowblind">
+        <img class="item-img" src="./img/blind1.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">Window Blind</h3>
+        <p class="item-price">32,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal1')">Details</button>
+      </div>
+
+      <!-- ITEMS 2--> 
+
+      <div class="item-card curtain">
+        <img class="item-img" src="./img/cotton.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">CURTAIN</h3>
+        <p class="item-price">40,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal2')">Details</button>
+      </div>
+
+      <!-- ITEMS 3--> 
+
+      <div class="item-card wallpaper">
+        <img class="item-img" src="./img/wallpaper.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">WALL PAPER</h3>
+        <p class="item-price">21,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal3')">Details</button>
+      </div>
+
+      <!-- ITEMS 4--> 
+
+      <div class="item-card wallpicture">
+        <img class="item-img" src="./img/wallpicture.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">WALL PICTURE</h3>
+        <p class="item-price">15,000</p><br><br>
+        <p><button class="item-modalbtn" onclick="openModal('modal4')">Details</button></p>
+      </div>
+
+      <!-- ITEMS 5--> 
+
+      <div class="item-card centerrug">
+        <img class="item-img" src="./img/centerrug.webp" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">CENTER RUG</h3>
+        <p class="item-price">15,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal5')">Details</button>
+      </div>
+
+      <!-- ITEMS 6--> 
+
+      <div class="item-card windowblind">
+        <img class="item-img" src="./img/blind1.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">Window Blind</h3>
+        <p class="item-price">32,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal6')">Details</button>
+      </div>
+
+      <!-- ITEMS 7--> 
+
+      <div class="item-card curtain">
+        <img class="item-img" src="./img/cotton.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">CURTAIN</h3>
+        <p class="item-price">40,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal7')">Details</button>
+      </div>
+
+      <!-- ITEMS 8--> 
+
+      <div class="item-card wallpaper">
+        <img class="item-img" src="./img/wallpaper.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">WALL PAPER</h3>
+        <p class="item-price">21,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal8')">Details</button>
+      </div>
+
+      <!-- ITEMS 9--> 
+
+      <div class="item-card wallpicture">
+        <img class="item-img" src="./img/wallpicture.jpeg" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">WALL PICTURE</h3>
+        <p class="item-price">15,000</p><br><br>
+        <p><button class="item-modalbtn" onclick="openModal('modal9')">Details</button></p>
+      </div>
+
+      <!-- ITEMS 10--> 
+
+      <div class="item-card centerrug">
+        <img class="item-img" src="./img/centerrug.webp" height="190" width="190">
+        <span class="item-tag">NEW</span>
+        <h3 class="item-title">CENTER RUG</h3>
+        <p class="item-price">15,300</p><br><br>
+        <button class="item-modalbtn" onclick="openModal('modal10')">Details</button>
+      </div>
+  
+
+      
+
+      <!-- Add more item cards as needed -->
+    </div>
+  </div><br>
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>copyright reserved <a href="#" title="#">uche interior</p>
+  </footer>
+
+  <script src="category.js"></script>
+  <script src="modal.js"></script>
+  <script src="parent.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+ <!-- CATEGORY STARTS -->
+    
+
+        <!-- CATEGORY ENDS -->
+
+        <!-- FILTER STARTS -->
+
+       
+  <!-- FILTER ENDS -->
+
+
+        <!-- MODAL 1 -->
+
+   
+        
+
+        <!-- MODAL 2 -->
+
+       
+        <!-- MODAL 3 -->
+     
+
+        <!-- MODAL 4 -->
+
+      
+
+        <!-- MODAL 5 -->
+
+
+         <!-- MODAL 6 -->
+                           
+      
+
+
+        <!-- MODAL 7 -->
+    
+
+        <!-- MODAL 8 -->
+
+    
+        <!-- Add more item cards as needed -->
+     
+<!-- Your website content here -->
+   
+ 
