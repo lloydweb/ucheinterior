@@ -43,8 +43,8 @@ h4 {
   border-radius: 0;
 }
 .thumbnail img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   margin-bottom: 10px;
 }
 .carousel-control.right, .carousel-control.left {
@@ -71,7 +71,21 @@ h4 {
   border: 1px solid #f4511e; 
   border-radius:0 !important;
   transition: box-shadow 0.5s;
+ 
 }
+.pannel-body{
+  padding: 15px 0 15px 0;
+  border: none;
+  border-radius: 0;
+
+}
+
+.pannel-body img{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
 .panel:hover {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
